@@ -38,27 +38,27 @@
     },
     "start": {
       "eyebrow": "Start Here",
-      "title": "Your My Seafood Stand Journey",
+      "title": "Your Can You Find Everything Journey",
       "cards": [
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Learn the core search loop, camera controls and sweeping strategies that carry you through every zone."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "All Items Checklist",
+          "description": "Track every collectible category, from fairies and crayons to dog tags and screws, in one checklist."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Secret Areas",
+          "description": "Reveal hidden rooms, false walls and the Skeleton Key routes most players walk straight past."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in My Seafood Stand."
+          "title": "Active Codes",
+          "description": "Redeem working codes for radar boosts, speed buffs and explorer tokens before they expire."
         }
       ]
     },
@@ -66,237 +66,327 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner Guide",
+        "All Items",
+        "Secret Areas",
+        "Active Codes"
       ],
       "cards": [
         {
           "badge": "Beginner",
           "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "description": "Master the search loop, camera controls and sweeping patterns before you hunt rare collectibles.",
+          "href": "/guide/can-you-find-everything-beginner-guide"
+        },
+        {
+          "badge": "Popular",
+          "title": "All Items Checklist",
+          "description": "Every item category, from fairies and crayons to dog tags and screws, in one completion checklist.",
+          "href": "/guide/can-you-find-everything-all-items"
         },
         {
           "badge": "Updated",
+          "title": "Map & Area Guides",
+          "description": "Zone-by-zone routes for Cowboy Town, Crystal Cave, Dark Forest, Pirate Bay and Space Station.",
+          "href": "/maps/can-you-find-everything-map"
+        },
+        {
+          "badge": "Popular",
+          "title": "Secret Areas",
+          "description": "Hidden rooms, false walls and Skeleton Key chests that most explorers miss.",
+          "href": "/secrets/can-you-find-everything-secret-areas"
+        },
+        {
+          "badge": "New",
           "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
+          "description": "Working codes with rewards, redemption steps and expiry notes.",
+          "href": "/codes/can-you-find-everything-codes"
+        },
+        {
+          "badge": "New",
+          "title": "Hard Items",
+          "description": "Track the hard and super hard collectibles that stall most completion runs.",
+          "href": "/guide/can-you-find-everything-hard-items"
         },
         {
           "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "title": "New Update Guide",
+          "description": "New zones, hidden items and badge changes added in the latest content drop.",
+          "href": "/updates/can-you-find-everything-new-update"
         },
         {
           "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
+          "title": "Bosses Guide",
+          "description": "Boss locations, spawn mechanics and reward tables across every zone.",
+          "href": "/mechanics/can-you-find-everything-bosses"
         },
         {
           "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
-        },
-        {
-          "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
-        },
-        {
-          "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
-        },
-        {
-          "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
-        },
-        {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "title": "Double Jump",
+          "description": "Movement techniques that unlock hard-to-reach collectibles and secret ledges.",
+          "href": "/mechanics/can-you-find-everything-double-jump"
         }
       ]
     },
     "aboutGame": {
-      "title": "What is My Seafood Stand?",
+      "title": "What is Can You Find Everything?",
       "paragraphs": [
-        "My Seafood Stand is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Can You Find Everything is a hidden-object scavenger game on Roblox where players explore detailed maps and hunt for cleverly concealed items. Every zone is packed with collectibles, from tiny fairies and screws to seasonal presents, dog tags and crayons that blend into the scenery.",
+        "Our fan-made wiki maps each area, tracks every item category and breaks down secret rooms, movement mechanics and updates so you can reach 100% completion. Whether you are following the beginner guide or chasing the last missing collectible, every page is built to shorten the hunt."
       ],
       "stats": [
-        {
-          "label": "Developer",
-          "value": "Midnight Continent"
-        },
         {
           "label": "Platform",
           "value": "Roblox"
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Hidden Object"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Map Zones",
+          "value": "5"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Item Types",
+          "value": "6"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
+          "label": "Secret Areas",
+          "value": "5"
         },
         {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Update Guides",
+          "value": "6"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
-      "title": "Explore My Seafood Stand Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "title": "Explore Can You Find Everything Wiki",
+      "description": "Search every map, uncover hidden items and secrets, redeem active codes, and track each update with our Can You Find Everything guides.",
       "modules": [
         {
           "order": 1,
-          "name": "My Seafood Stand Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/my-seafood-stand-codes",
-          "displayType": "code-box",
+          "name": "Can You Find Everything Item Guide",
+          "description": "Find every hidden item across the game's large exploration world with location tips and completion-oriented search guidance.",
+          "href": "/items/can-you-find-everything-items",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "Fairies",
+              "detail": "Tiny camouflaged sprites that hide in petals, shingles and dancing shadows across every stage."
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "Crayons",
+              "detail": "Colorful sticks tucked behind deceptive geometry and platforming gauntlets in each zone."
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "Dog Tags",
+              "detail": "Militaria hidden in overgrown brush, abandoned complexes and cramped urban interiors."
+            },
+            {
+              "label": "Screws",
+              "detail": "Tiny hardware pieces stashed in dark crevices, junk drawers and cluttered workbenches."
+            },
+            {
+              "label": "Presents",
+              "detail": "Seasonal gifts concealed under snowdrifts, atop rooftops and behind fake walls."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/my-seafood-stand-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "Can You Find Everything Beginner Guide",
+          "description": "A beginner-friendly introduction to how exploration works, how to search efficiently and what new players should prioritize.",
+          "href": "/guide/can-you-find-everything-beginner-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "1",
+              "detail": "Learn camera movement, field of view and interaction hitboxes before hunting rare items."
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "2",
+              "detail": "Raise brightness and turn on object highlighting so camouflaged props stand out."
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "3",
+              "detail": "Sweep each room in three bands: floor level, eye level and overhead."
+            },
+            {
+              "label": "4",
+              "detail": "Trace the walls clockwise and keep your back to the wall to capture the full scene."
+            },
+            {
+              "label": "5",
+              "detail": "Clear the current zone before triggering any point of no return."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/my-seafood-stand-tier-list",
-          "displayType": "tier-grid",
+          "name": "Can You Find Everything Areas Guide",
+          "description": "Explorable locations organized into easy-to-scan area guides so you can pick a zone and search it systematically.",
+          "href": "/maps/can-you-find-everything-map",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "Cowboy",
+              "detail": "Cowboy Town: dusty streets and rooftops packed with overlooked collectibles."
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "Crystal",
+              "detail": "Crystal Cave: glowing rock formations hide items inside vertical shafts."
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "Forest",
+              "detail": "Dark Forest: dense foliage conceals fairies and camouflaged props."
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "Pirate",
+              "detail": "Pirate Bay: docks, ships and stacked crates hold tucked-away treasures."
+            },
+            {
+              "label": "Space",
+              "detail": "Space Station: multi-tier corridors reward careful overhead scanning."
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/my-seafood-stand-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "Can You Find Everything Secrets Guide",
+          "description": "Hard-to-spot objects, unusual hiding places and secrets that most players miss during normal exploration.",
+          "href": "/secrets/can-you-find-everything-secret-areas",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "Backrooms",
+              "detail": "Hidden rooms that branch off normal geometry and hold rare collectibles."
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "Rabbit",
+              "detail": "Rabbit Hole: a descending chain of clues that leads to true completion."
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "Hideout",
+              "detail": "Secret Hideout: concealed rooms with stashed items behind false walls."
+            },
+            {
+              "label": "Key",
+              "detail": "Skeleton Key: opens chests and sealed doors needed for 100% completion."
+            },
+            {
+              "label": "Walls",
+              "detail": "False walls and breakable props reveal bonus rooms across every map."
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/my-seafood-stand-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "Can You Find Everything Codes",
+          "description": "Active code information and where to check for newly released codes, verified against official sources before publishing.",
+          "href": "/codes/can-you-find-everything-codes",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "Redeem",
+              "detail": "Open the Codes or Rewards icon in the hub to enter phrases."
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "Case",
+              "detail": "Codes are case-sensitive; paste them exactly with no trailing spaces."
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Rewards",
+              "detail": "Radar boosts, speed buffs, explorer tokens and cosmetic unlocks."
+            },
+            {
+              "label": "Expiry",
+              "detail": "Event codes can expire within 24 to 48 hours, so redeem them early."
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/my-seafood-stand-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "Can You Find Everything Update Guide",
+          "description": "Track newly introduced areas and hidden items so returning players can see what changed since their last session.",
+          "href": "/updates/can-you-find-everything-new-update",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Christmas",
+              "detail": "Christmas Update added festive presents and seasonal secret locations."
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "Desert",
+              "detail": "Desert Expansion opened new zones filled with fresh hidden items."
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Egypt",
+              "detail": "Little Egypt Update introduced a themed area packed with collectibles."
+            },
+            {
+              "label": "Wizard",
+              "detail": "Harry Potter Update added themed secrets and badge challenges."
+            },
+            {
+              "label": "New",
+              "detail": "New Update brings map zones, hidden items and badge changes."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Can You Find Everything Multiplayer Guide",
+          "description": "How exploration works when playing with friends and practical ways to approach the scavenger hunt cooperatively.",
+          "href": "/mechanics",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Split large maps into sectors and assign one zone to each player."
+            },
+            {
+              "label": "2",
+              "detail": "Call out coordinates and remaining item counts as each sector is cleared."
+            },
+            {
+              "label": "3",
+              "detail": "Share consumable radar pulses instead of stacking boosts on one hunter."
+            },
+            {
+              "label": "4",
+              "detail": "Cross-check the in-game area tracker together to find missed items."
+            },
+            {
+              "label": "5",
+              "detail": "Re-sweep sealed areas before anyone triggers a point of no return."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Can You Find Everything Completion Guide",
+          "description": "Completion-focused guidance for players trying to find every available item, organized by area and item group.",
+          "href": "/guide/can-you-find-everything-super-hard-items",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Every secret area, Backrooms route and Skeleton Key chest found."
+            },
+            {
+              "label": "A",
+              "detail": "All super hard items collected across every zone."
+            },
+            {
+              "label": "B",
+              "detail": "All hard items and hidden collectibles cleared per map."
+            },
+            {
+              "label": "C",
+              "detail": "Core item set and beginner badges completed."
             }
           ]
         }
@@ -304,27 +394,27 @@
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Quick answers to the most common questions about My Seafood Stand.",
+      "description": "Quick answers to the most common questions about Can You Find Everything.",
       "items": [
         {
-          "question": "What is My Seafood Stand?",
-          "answer": "My Seafood Stand is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "question": "What is Can You Find Everything?",
+          "answer": "Can You Find Everything is a hidden-object scavenger game on Roblox. Players explore detailed maps and search for cleverly concealed items, from tiny fairies and screws to seasonal presents and dog tags, while working toward 100% completion."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "How do I find every item in Can You Find Everything?",
+          "answer": "Sweep each room in three bands, floor, eye level and overhead, then trace the walls clockwise before checking central furniture. Turn on object highlighting and raise brightness so camouflaged props stand out, and clear the current zone before triggering any point of no return."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "Does Can You Find Everything have codes?",
+          "answer": "Yes. Can You Find Everything codes are redeemed through the Codes or Rewards icon in the hub. Codes are case-sensitive, so paste them exactly with no trailing spaces, and redeem event codes quickly because they can expire within a day or two."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "Where are the secret areas in Can You Find Everything?",
+          "answer": "Secret areas in Can You Find Everything include the Backrooms, the Rabbit Hole chain, the Secret Hideout and Skeleton Key chests. Watch for false walls, breakable props and lighting anomalies that mark a hidden room."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "Can I complete Can You Find Everything in one playthrough?",
+          "answer": "Yes, most players can finish Can You Find Everything in a single run if they avoid points of no return. Before you cross a glowing doorway or follow an escape objective, turn around and clear the remaining items in the current zone, and check ceilings and under stairwells for stragglers."
         }
       ]
     },
