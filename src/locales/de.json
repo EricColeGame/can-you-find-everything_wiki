@@ -1,1 +1,499 @@
-{}
+{
+  "site": {
+    "name": "Can You Find Everything Wiki",
+    "shortName": "Can You Find Everything",
+    "tagline": "Versteckte Objekte, Gebietsführer und Komplettlösungen",
+    "description": "Dein ultimativer Leitfaden zu Can You Find Everything auf Roblox! Entdecke Verstecke verborgener Objekte, Gebiets-Komplettlösungen, Geheimnisse, Tipps und Abschluss-Guides.",
+    "legalNotice": "Inoffizielles Fan-Wiki. Von Spielern für Spieler gemacht."
+  },
+  "nav": {
+    "home": "Start",
+    "menu": "Menü",
+    "toggleTheme": "Design wechseln",
+    "guide": "Guide",
+    "items": "Objekte",
+    "maps": "Karten",
+    "secrets": "Geheimnisse",
+    "mechanics": "Mechaniken",
+    "codes": "Codes",
+    "updates": "Updates"
+  },
+  "home": {
+    "meta": {
+      "title": "Can You Find Everything Wiki - Guides & Komplettlösung",
+      "description": "Entdecke Guides zu Can You Find Everything, versteckte Objekte, Rätsel, Komplettlösungen, Tipps und Lösungen, damit du jedes Objekt findest und jede Herausforderung meisterst."
+    },
+    "hero": {
+      "eyebrow": "Wimmelbild-Rätselspiel",
+      "title": "Can You Find Everything Wiki",
+      "description": "Ein Wimmelbild-Rätselspiel, in dem Spieler detaillierte Szenen durchsuchen und clever versteckte Objekte entdecken. Verfolge jeden Fundort, jedes Geheimnis und jede Komplettlösung in unserem Fan-Wiki.",
+      "stats": [
+        "Verstecke verborgener Objekte",
+        "Gebiets-Komplettlösungen",
+        "Geheimnisse & Tipps",
+        "Abschluss-Guides"
+      ],
+      "primaryCta": "Anfänger-Guide",
+      "secondaryCta": "Gebiets-Komplettlösungen",
+      "tertiaryCta": "Verstecke verborgener Objekte",
+      "videoLabel": "Gameplay-Komplettlösung"
+    },
+    "updates": {
+      "title": "Neueste Updates",
+      "browse": "Alle Guides durchsuchen",
+      "viewAll": "Alle ansehen"
+    },
+    "start": {
+      "eyebrow": "Hier starten",
+      "title": "Deine Reise durch Can You Find Everything",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Anfänger-Guide",
+          "description": "Lerne die grundlegende Suchschleife, die Kamerasteuerung und die Suchstrategien kennen, die dich durch jede Zone bringen."
+        },
+        {
+          "number": "2",
+          "title": "Checkliste aller Objekte",
+          "description": "Verfolge jede Sammelkategorie, von Feen und Buntstiften bis zu Hundemarken und Schrauben, in einer einzigen Checkliste."
+        },
+        {
+          "number": "3",
+          "title": "Geheime Gebiete",
+          "description": "Enthülle verborgene Räume, falsche Wände und die Routen des Skelettschlüssels, an denen die meisten Spieler einfach vorbeigehen."
+        },
+        {
+          "number": "4",
+          "title": "Aktive Codes",
+          "description": "Löse funktionierende Codes für Radar-Boosts, Tempo-Buffs und Entdecker-Token ein, bevor sie ablaufen."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Beliebte Seiten",
+      "title": "Jetzt im Trend",
+      "quickLinks": [
+        "Anfänger-Guide",
+        "Alle Objekte",
+        "Geheime Gebiete",
+        "Aktive Codes"
+      ],
+      "cards": [
+        {
+          "badge": "Anfänger",
+          "title": "Anfänger-Guide",
+          "description": "Meistere die Suchschleife, die Kamerasteuerung und die Suchmuster, bevor du seltene Sammelobjekte jagst.",
+          "href": "/guide/can-you-find-everything-beginner-guide"
+        },
+        {
+          "badge": "Beliebt",
+          "title": "Checkliste aller Objekte",
+          "description": "Jede Objektkategorie, von Feen und Buntstiften bis zu Hundemarken und Schrauben, in einer Abschluss-Checkliste.",
+          "href": "/guide/can-you-find-everything-all-items"
+        },
+        {
+          "badge": "Aktualisiert",
+          "title": "Karten- & Gebiets-Guides",
+          "description": "Routen Zone für Zone für Cowboy Town, Crystal Cave, Dark Forest, Pirate Bay und Space Station.",
+          "href": "/maps/can-you-find-everything-map"
+        },
+        {
+          "badge": "Beliebt",
+          "title": "Geheime Gebiete",
+          "description": "Verborgene Räume, falsche Wände und Truhen des Skelettschlüssels, die die meisten Entdecker übersehen.",
+          "href": "/secrets/can-you-find-everything-secret-areas"
+        },
+        {
+          "badge": "Neu",
+          "title": "Aktive Codes",
+          "description": "Funktionierende Codes mit Belohnungen, Einlöseschritten und Ablaufhinweisen.",
+          "href": "/codes/can-you-find-everything-codes"
+        },
+        {
+          "badge": "Neu",
+          "title": "Schwere Objekte",
+          "description": "Verfolge die schweren und sehr schweren Sammelobjekte, die die meisten Abschlussläufe aufhalten.",
+          "href": "/guide/can-you-find-everything-hard-items"
+        },
+        {
+          "badge": "Aktualisiert",
+          "title": "Guide zum neuen Update",
+          "description": "Neue Gebiete, verborgene Objekte und Abzeichenänderungen aus dem letzten Content-Update.",
+          "href": "/updates/can-you-find-everything-new-update"
+        },
+        {
+          "badge": "Beliebt",
+          "title": "Boss-Guide",
+          "description": "Boss-Fundorte, Spawn-Mechaniken und Belohnungstabellen in allen Gebieten.",
+          "href": "/mechanics/can-you-find-everything-bosses"
+        },
+        {
+          "badge": "Neu",
+          "title": "Doppelsprung",
+          "description": "Bewegungstechniken, die schwer erreichbare Sammelobjekte und geheime Simse freischalten.",
+          "href": "/mechanics/can-you-find-everything-double-jump"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Was ist Can You Find Everything?",
+      "paragraphs": [
+        "Can You Find Everything ist ein Wimmelbild-Suchspiel auf Roblox, in dem Spieler detaillierte Karten erkunden und nach clever versteckten Objekten jagen. Jede Zone ist voller Sammelobjekte, von winzigen Feen und Schrauben bis zu saisonalen Geschenken, Hundemarken und Buntstiften, die mit der Umgebung verschmelzen.",
+        "Unser Fan-Wiki kartiert jedes Gebiet, verfolgt jede Objektkategorie und schlüsselt geheime Räume, Bewegungsmechaniken und Updates auf, damit du 100 % Abschluss erreichst. Ob du dem Anfänger-Guide folgst oder das letzte fehlende Sammelobjekt jagst – jede Seite soll die Suche verkürzen."
+      ],
+      "stats": [
+        {
+          "label": "Plattform",
+          "value": "Roblox"
+        },
+        {
+          "label": "Genre",
+          "value": "Wimmelbild"
+        },
+        {
+          "label": "Kartenzonen",
+          "value": "5"
+        },
+        {
+          "label": "Objekttypen",
+          "value": "6"
+        },
+        {
+          "label": "Geheime Gebiete",
+          "value": "5"
+        },
+        {
+          "label": "Update-Guides",
+          "value": "6"
+        }
+      ],
+      "cta": "Alle Guides entdecken"
+    },
+    "explore": {
+      "title": "Entdecke das Can You Find Everything Wiki",
+      "description": "Durchsuche jede Karte, entdecke verborgene Objekte und Geheimnisse, löse aktive Codes ein und verfolge jedes Update mit unseren Can You Find Everything Guides.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Can You Find Everything Objekt-Guide",
+          "description": "Finde jedes verborgene Objekt in der großen Erkundungswelt des Spiels mit Fundort-Tipps und abschlussorientierter Suchhilfe.",
+          "href": "/items/can-you-find-everything-items",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Feen",
+              "detail": "Winzige getarnte Wesen, die sich in Blütenblättern, Dachziegeln und tanzenden Schatten jeder Stage verstecken."
+            },
+            {
+              "label": "Buntstifte",
+              "detail": "Bunte Stifte, die hinter täuschender Geometrie und Plattform-Herausforderungen in jeder Zone stecken."
+            },
+            {
+              "label": "Hundemarken",
+              "detail": "Militaria, versteckt in überwuchertem Gestrüpp, verlassenen Anlagen und engen urbanen Innenräumen."
+            },
+            {
+              "label": "Schrauben",
+              "detail": "Winzige Hardware-Teile in dunklen Spalten, Schubladen voller Krimskrams und überfüllten Werkbänken."
+            },
+            {
+              "label": "Geschenke",
+              "detail": "Saisonale Geschenke unter Schneewehen, auf Dächern und hinter falschen Wänden."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Can You Find Everything Anfänger-Guide",
+          "description": "Eine anfängerfreundliche Einführung, wie Erkundung funktioniert, wie man effizient sucht und worauf neue Spieler achten sollten.",
+          "href": "/guide/can-you-find-everything-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Lerne Kamerabewegung, Sichtfeld und Interaktions-Hitboxen kennen, bevor du seltene Objekte jagst."
+            },
+            {
+              "label": "2",
+              "detail": "Erhöhe die Helligkeit und aktiviere die Objekthervorhebung, damit getarnte Requisiten auffallen."
+            },
+            {
+              "label": "3",
+              "detail": "Durchsuche jeden Raum in drei Bändern: Bodenniveau, Augenhöhe und Überkopf."
+            },
+            {
+              "label": "4",
+              "detail": "Gehe die Wände im Uhrzeigersinn ab und halte den Rücken zur Wand, um die ganze Szene zu erfassen."
+            },
+            {
+              "label": "5",
+              "detail": "Räume die aktuelle Zone, bevor du einen Punkt ohne Wiederkehr auslöst."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Can You Find Everything Gebiets-Guide",
+          "description": "Erkundbare Orte, organisiert in leicht lesbaren Gebiets-Guides, damit du eine Zone auswählen und systematisch absuchen kannst.",
+          "href": "/maps/can-you-find-everything-map",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Cowboy",
+              "detail": "Cowboy Town: staubige Straßen und Dächer voller übersehener Sammelobjekte."
+            },
+            {
+              "label": "Crystal",
+              "detail": "Crystal Cave: leuchtende Felsformationen verbergen Objekte in vertikalen Schächten."
+            },
+            {
+              "label": "Forest",
+              "detail": "Dark Forest: dichtes Blattwerk verbirgt Feen und getarnte Requisiten."
+            },
+            {
+              "label": "Pirate",
+              "detail": "Pirate Bay: Docks, Schiffe und gestapelte Kisten bergen versteckte Schätze."
+            },
+            {
+              "label": "Space",
+              "detail": "Space Station: mehrstöckige Korridore belohnen sorgfältiges Überkopf-Suchen."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Can You Find Everything Geheimnis-Guide",
+          "description": "Schwer zu entdeckende Objekte, ungewöhnliche Verstecke und Geheimnisse, die die meisten Spieler bei der normalen Erkundung übersehen.",
+          "href": "/secrets/can-you-find-everything-secret-areas",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Backrooms",
+              "detail": "Verborgene Räume, die von der normalen Geometrie abzweigen und seltene Sammelobjekte enthalten."
+            },
+            {
+              "label": "Rabbit",
+              "detail": "Rabbit Hole: eine absteigende Kette von Hinweisen, die zum wahren Abschluss führt."
+            },
+            {
+              "label": "Hideout",
+              "detail": "Secret Hideout: verborgene Räume mit gehorteten Objekten hinter falschen Wänden."
+            },
+            {
+              "label": "Key",
+              "detail": "Skeleton Key: öffnet Truhen und versiegelte Türen, die für 100 % nötig sind."
+            },
+            {
+              "label": "Walls",
+              "detail": "Falsche Wände und zerbrechliche Requisiten enthüllen Bonusräume auf jeder Karte."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Can You Find Everything Codes",
+          "description": "Informationen zu aktiven Codes und wo du nach neu veröffentlichten Codes suchst, vor der Veröffentlichung gegen offizielle Quellen geprüft.",
+          "href": "/codes/can-you-find-everything-codes",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Einlösen",
+              "detail": "Öffne das Codes- oder Belohnungs-Symbol im Hub, um Phrasen einzugeben."
+            },
+            {
+              "label": "Groß-/Kleinschreibung",
+              "detail": "Codes unterscheiden zwischen Groß- und Kleinschreibung; füge sie exakt und ohne Leerzeichen am Ende ein."
+            },
+            {
+              "label": "Belohnungen",
+              "detail": "Radar-Boosts, Tempo-Buffs, Entdecker-Token und kosmetische Freischaltungen."
+            },
+            {
+              "label": "Ablauf",
+              "detail": "Event-Codes können innerhalb von 24 bis 48 Stunden ablaufen, also löse sie früh ein."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Can You Find Everything Update-Guide",
+          "description": "Verfolge neu eingeführte Gebiete und verborgene Objekte, damit zurückkehrende Spieler sehen, was sich seit ihrer letzten Sitzung geändert hat.",
+          "href": "/updates/can-you-find-everything-new-update",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Weihnachten",
+              "detail": "Das Weihnachts-Update fügte festliche Geschenke und saisonale geheime Orte hinzu."
+            },
+            {
+              "label": "Wüste",
+              "detail": "Die Wüsten-Erweiterung öffnete neue Zonen voller frischer verborgener Objekte."
+            },
+            {
+              "label": "Ägypten",
+              "detail": "Das Little-Egypt-Update führte ein Themengebiet voller Sammelobjekte ein."
+            },
+            {
+              "label": "Zauberer",
+              "detail": "Das Harry-Potter-Update fügte thematische Geheimnisse und Abzeichen-Herausforderungen hinzu."
+            },
+            {
+              "label": "Neu",
+              "detail": "Das neue Update bringt Kartenzonen, verborgene Objekte und Abzeichenänderungen."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Can You Find Everything Mehrspieler-Guide",
+          "description": "Wie Erkundung mit Freunden funktioniert und praktische Wege, die Schatzsuche gemeinsam anzugehen.",
+          "href": "/mechanics",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Teile große Karten in Sektoren auf und weise jedem Spieler eine Zone zu."
+            },
+            {
+              "label": "2",
+              "detail": "Melde Koordinaten und verbleibende Objektzahlen, sobald ein Sektor geräumt ist."
+            },
+            {
+              "label": "3",
+              "detail": "Teile verbrauchbare Radarimpulse, statt Boosts auf einen Jäger zu stapeln."
+            },
+            {
+              "label": "4",
+              "detail": "Gleicht gemeinsam den Gebiets-Tracker im Spiel ab, um verpasste Objekte zu finden."
+            },
+            {
+              "label": "5",
+              "detail": "Durchsuche versiegelte Gebiete erneut, bevor jemand einen Punkt ohne Wiederkehr auslöst."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Can You Find Everything Abschluss-Guide",
+          "description": "Abschlussorientierte Hilfe für Spieler, die jedes verfügbare Objekt finden wollen, geordnet nach Gebiet und Objektgruppe.",
+          "href": "/guide/can-you-find-everything-super-hard-items",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Jedes geheime Gebiet, jede Backrooms-Route und jede Truhe des Skelettschlüssels gefunden."
+            },
+            {
+              "label": "A",
+              "detail": "Alle sehr schweren Objekte in jeder Zone gesammelt."
+            },
+            {
+              "label": "B",
+              "detail": "Alle schweren Objekte und verborgenen Sammelobjekte pro Karte geräumt."
+            },
+            {
+              "label": "C",
+              "detail": "Kern-Objektset und Anfänger-Abzeichen abgeschlossen."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "description": "Schnelle Antworten auf die häufigsten Fragen zu Can You Find Everything.",
+      "items": [
+        {
+          "question": "Was ist Can You Find Everything?",
+          "answer": "Can You Find Everything ist ein Wimmelbild-Suchspiel auf Roblox. Spieler erkunden detaillierte Karten und suchen clever versteckte Objekte, von winzigen Feen und Schrauben bis zu saisonalen Geschenken und Hundemarken, während sie auf 100 % Abschluss hinarbeiten."
+        },
+        {
+          "question": "Wie finde ich jedes Objekt in Can You Find Everything?",
+          "answer": "Durchsuche jeden Raum in drei Bändern – Boden, Augenhöhe und Überkopf – und gehe dann die Wände im Uhrzeigersinn ab, bevor du zentrale Möbel prüfst. Aktiviere die Objekthervorhebung und erhöhe die Helligkeit, damit getarnte Requisiten auffallen, und räume die aktuelle Zone, bevor du einen Punkt ohne Wiederkehr auslöst."
+        },
+        {
+          "question": "Hat Can You Find Everything Codes?",
+          "answer": "Ja. Can You Find Everything Codes werden über das Codes- oder Belohnungs-Symbol im Hub eingelöst. Codes unterscheiden zwischen Groß- und Kleinschreibung, also füge sie exakt und ohne Leerzeichen am Ende ein, und löse Event-Codes schnell ein, da sie innerhalb von ein bis zwei Tagen ablaufen können."
+        },
+        {
+          "question": "Wo sind die geheimen Gebiete in Can You Find Everything?",
+          "answer": "Zu den geheimen Gebieten in Can You Find Everything gehören die Backrooms, die Rabbit-Hole-Kette, das Secret Hideout und die Truhen des Skelettschlüssels. Achte auf falsche Wände, zerbrechliche Requisiten und Beleuchtungsanomalien, die einen verborgenen Raum verraten."
+        },
+        {
+          "question": "Kann ich Can You Find Everything in einem Durchlauf abschließen?",
+          "answer": "Ja, die meisten Spieler können Can You Find Everything in einem einzigen Durchlauf beenden, wenn sie Punkte ohne Wiederkehr vermeiden. Bevor du eine leuchtende Tür durchquerst oder einem Fluchtziel folgst, dreh dich um und räume die restlichen Objekte in der aktuellen Zone, und prüfe Decken und unter Treppen nach Nachzüglern."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Bereit, alles zu finden?",
+      "description": "Von deiner ersten Suche nach verborgenen Objekten bis zum Abschluss ganzer Gebiete deckt unser Community-Wiki dich mit kostenlosen, aktuellen Guides ab.",
+      "primary": "Lies den Anfänger-Guide",
+      "secondary": "Auf Roblox spielen"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Can You Find Everything Guides",
+    "overviewDescription": "Schritt-für-Schritt-Guides zu Can You Find Everything mit Anfängergrundlagen, Suchmustern und 100-%-Abschlussrouten."
+  },
+  "items": {
+    "overviewTitle": "Can You Find Everything Objekte",
+    "overviewDescription": "Jeder Fundort von Can You Find Everything, von leichten Sammelobjekten bis zu den schwersten verborgenen Objekten."
+  },
+  "maps": {
+    "overviewTitle": "Can You Find Everything Karten",
+    "overviewDescription": "Vollständige Gebietsübersichten für jede Can You Find Everything Karte, inklusive Cowboy Town, Crystal Cave, Dark Forest, Pirate Bay und Space Station."
+  },
+  "secrets": {
+    "overviewTitle": "Can You Find Everything Geheimnisse",
+    "overviewDescription": "Entdecke verborgene geheime Gebiete von Can You Find Everything wie Backrooms, Rabbit Hole, Secret Hideout und die Räume des Skelettschlüssels."
+  },
+  "mechanics": {
+    "overviewTitle": "Can You Find Everything Mechaniken",
+    "overviewDescription": "Lerne Bewegungs- und Rätselmechaniken von Can You Find Everything, inklusive einfacher Sprünge, Doppelsprünge, Bosse, Farb-Zeitbomben und fehlender Objekte."
+  },
+  "codes": {
+    "overviewTitle": "Can You Find Everything Codes",
+    "overviewDescription": "Alle funktionierenden Can You Find Everything Codes und wie du sie für kostenlose Belohnungen einlöst."
+  },
+  "updates": {
+    "overviewTitle": "Can You Find Everything Updates",
+    "overviewDescription": "Neueste Can You Find Everything Updates, Events und neue Objekte, inklusive der Weihnachts-, Wüsten- und Little-Egypt-Erweiterungen."
+  },
+  "shared": {
+    "wikiNavigation": "Wiki-Navigation",
+    "activeCodes": "Aktive Codes",
+    "updated": "Aktualisiert",
+    "viewAllCodes": "Alle Codes ansehen",
+    "playOnRoblox": "Auf Roblox spielen",
+    "inThisSection": "In diesem Abschnitt",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "nextSteps": "Nächste Schritte",
+    "needHelp": "Brauchst du Hilfe?",
+    "relatedReading": "Verwandte Lektüre",
+    "relatedGuides": "Verwandte Guides",
+    "readMore": "Mehr lesen",
+    "officialMedia": "Offizielle Medien",
+    "home": "Start",
+    "noGuidesAvailable": "Noch keine Guides verfügbar. Schau bald wieder vorbei!"
+  },
+  "footer": {
+    "aboutTitle": "Can You Find Everything Wiki",
+    "about": "Can You Find Everything Wiki ist ein unabhängiger, von Fans erstellter Guide-Hub mit Fundorten verborgener Objekte, Gebiets-Komplettlösungen, Geheimnissen und Abschlusstipps für neue und erfahrene Spieler gleichermaßen.",
+    "quickLinks": "Schnelllinks",
+    "guides": "Guides",
+    "legal": "Rechtliches",
+    "copyright": "2026 Can You Find Everything Wiki. Nicht mit windflowersnow oder Roblox verbunden.",
+    "description": "Kostenlose Wimmelbild-Schnitzeljagd auf Roblox. Erkunde eine riesige offene Welt und finde clever versteckte Objekte.",
+    "playGame": "Spiele Can You Find Everything auf Roblox",
+    "officialDiscord": "Offizielle Roblox-Gruppe",
+    "officialYoutube": "Gameplay-Komplettlösungen",
+    "vvBuilder": "Community-Forum",
+    "beginnerGuide": "Anfänger-Guide",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen",
+    "itemGuides": "Objekt-Fundorte",
+    "secretGuides": "Geheime Gebiete",
+    "codeGuides": "Codes & Updates"
+  }
+}
