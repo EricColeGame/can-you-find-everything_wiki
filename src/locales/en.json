@@ -9,7 +9,14 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "items": "Items",
+    "maps": "Maps",
+    "secrets": "Secrets",
+    "mechanics": "Mechanics",
+    "codes": "Codes",
+    "updates": "Updates"
   },
   "home": {
     "meta": {
@@ -425,7 +432,34 @@
       "secondary": "Play on Roblox"
     }
   },
-  "bosses": {},
+  "guide": {
+    "overviewTitle": "Can You Find Everything Guides",
+    "overviewDescription": "Step-by-step Can You Find Everything guides covering beginner basics, sweeping patterns and 100% completion routes."
+  },
+  "items": {
+    "overviewTitle": "Can You Find Everything Items",
+    "overviewDescription": "Every Can You Find Everything item location, from easy collectibles to the hardest hidden objects."
+  },
+  "maps": {
+    "overviewTitle": "Can You Find Everything Maps",
+    "overviewDescription": "Full area breakdowns for every Can You Find Everything map, including Cowboy Town, Crystal Cave, Dark Forest, Pirate Bay and the Space Station."
+  },
+  "secrets": {
+    "overviewTitle": "Can You Find Everything Secrets",
+    "overviewDescription": "Discover hidden Can You Find Everything secret areas such as the Backrooms, Rabbit Hole, Secret Hideout and Skeleton Key rooms."
+  },
+  "mechanics": {
+    "overviewTitle": "Can You Find Everything Mechanics",
+    "overviewDescription": "Learn Can You Find Everything movement and puzzle mechanics, including basic jumps, double jumps, bosses, color time bombs and missing items."
+  },
+  "codes": {
+    "overviewTitle": "Can You Find Everything Codes",
+    "overviewDescription": "All working Can You Find Everything codes and how to redeem them for free rewards."
+  },
+  "updates": {
+    "overviewTitle": "Can You Find Everything Updates",
+    "overviewDescription": "Latest Can You Find Everything updates, events and new item drops, including the Christmas, Desert and Little Egypt expansions."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -456,10 +490,10 @@
     "officialYoutube": "Gameplay Walkthroughs",
     "vvBuilder": "Community Forum",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Race Guides",
-    "bossGuides": "Boss Guides",
-    "buildGuide": "Build Guide",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "itemGuides": "Item Locations",
+    "secretGuides": "Secret Areas",
+    "codeGuides": "Codes & Updates"
   }
 }

@@ -1,0 +1,114 @@
+export const metadata = {
+  title: "Basissprung-Guide: Kann man alles finden? Limits, Geheimnisse und Mechaniken",
+  description: "Fragst du dich, ob du mit Standard-Bewegungen 100 % Spielfortschritt erreichen kannst? Entdecke Limits, versteckte Routen und Mechaniken in unserem Guide.",
+  category: "mechanics",
+  date: "2026-10-05",
+}
+
+Jeder Erkundungsfan kennt die plötzliche Frustration, wenn ein verlockendes Sammelobjekt knapp außer Reichweite auf einem fernen Vorsprung schwebt. Beim Aufbruch zu einer ausgedehnten Sammelobjekt-Jagd fragen sich Spieler sofort: **Kann man alles mit dem Basissprung finden**, was die Standard-Bewegung erlaubt, oder sind wichtige Gegenstände dauerhaft hinter Mobilitäts-Upgrades verschlossen? Zu verstehen, ob man **alles mit den Mechaniken des Basissprungs finden kann**, ist unerlässlich, bevor man Stunden damit verbringt, jeden noch so kleinen Winkel der Karte abzusuchen. 
+
+Während die grundlegende Bewegung es ermöglicht, einen gewaltigen Teil der frühen Geheimnisse einzusammeln, hängt das vollständige Finden aller Items stark vom Verständnis von Bounding-Boxes, Umgebungskollisionen und Impulserhaltung ab. Diese umfassende Mechanik-Analyse untersucht die vertikale Reichweite, fortgeschrittene Momentum-Tricks und die Umgebungsphysik, um die absoluten Grenzen der anfänglichen Sprungmechanik aufzuzeigen.
+
+## Grundlagen der Start-Mobilität: Sprunghöhe und Schwellenwerte
+
+Im Kern bietet ein Anfangssprung einen statischen Aufwärtsimpuls, gepaart mit einer vorhersehbaren Flugbahn, die durch Gravitationsparameter und horizontale Geschwindigkeit bestimmt wird. Bei Standard-Fortbewegungsphysiken erfordert die Einschätzung, wie man **alles mit Basissprung-Routen finden kann**, die Berechnung von vertikalen Einheiten und seitlicher Airtime (Hang Time). Entwickler gestalten Startgebiete häufig mit standardisierten Vorsprungsabständen, was bedeutet, dass bestimmte schwebende Marken und Truhen mathematisch exakt auf deine Basissprunghöhe abgestimmt sind.
+
+Wenn ein Charakter den Boden verlässt, bestimmen Endgeschwindigkeit und Aufwärtsbeschleunigung den Scheitelpunkt. Liegt ein Sammelobjekt auch nur einen Bruchteil einer Einheit über diesem Scheitelpunkt, schlägt ein direkter vertikaler Sprung fehl. Horizontaler Drift und Richtungsimpuls sorgen jedoch für erhebliche Abweichungen dabei, ob ein Spieler sauber landet oder an einem Hang abrutscht.
+
+| Sprung-Archetyp | Vertikale Höhe | Horizontale Reichweite | Airtime | Geschätzte erreichbare Sammelobjekte |
+| :--- | :--- | :--- | :--- | :--- |
+| **Standard-Standsprung** | 1,00x Basiseinheit | 0,80x Basiseinheit | 0,65 s | ~35 % der Kartengeheimnisse |
+| **Voller Laufsprung** | 1,05x Basiseinheit | 2,20x Basiseinheit | 0,72 s | ~65 % der Kartengeheimnisse |
+| **Coyote-Time-Kantensprung** | 1,05x Basiseinheit | 2,65x Basiseinheit | 0,80 s | ~78 % der Kartengeheimnisse |
+| **Hanggestützter Boost** | 1,45x Basiseinheit | 2,10x Basiseinheit | 0,95 s | ~84 % der Kartengeheimnisse |
+| **Verbesserter Doppelsprung** | 2,10x Basiseinheit | 3,50x Basiseinheit | 1,30 s | 100 % der Kartengeheimnisse |
+
+Wie die Übersicht der Sprunghöhen zeigt, verringert das bloße Verlassen auf einen statischen Standsprung dein Erkundungspotenzial drastisch. Der Übergang von einem neutralen Sprung zu einem Schritt mit vollem Momentum verdoppelt deinen horizontalen Erkundungsradius auf der Stelle.
+
+## Physik-Exploits: Basissprünge über Standardgrenzen hinaus ausreizen
+
+Ambitionierte Komplettisten geben sich selten mit unsichtbaren Wänden oder Höhenbegrenzungen einfach so zufrieden. Beim Testen, ob man **alles finden kann, was die Basissprung-Physik** in frühen Leveln zulässt, wird das Meistern von Engine-Eigenheiten zur Pflicht. Selbst ohne Doppelsprünge, Wallruns oder Enterhaken können Spieler ihren Bewegungsspielraum durch gezielte Physik-Manipulation dramatisch erweitern.
+
+Eine entscheidende Technik ist das Ausnutzen der „Coyote Time“ – jenes kurzen Zeitfensters von wenigen Frames, in dem eine Game-Engine eine Sprungeingabe noch akzeptiert, nachdem die Kollisionskapsel des Charakters bereits festen Boden verlassen hat. Wenn du deinen Sprung am äußersten Ende dieses Puffers auslöst, kannst du breite Abgründe überwinden, die zunächst unüberwindbar wirken.
+
+| Technikname | Eingabefenster | Vertikaler Gewinn | Horizontaler Gewinn | Schwierigkeitsgrad |
+| :--- | :--- | :--- | :--- | :--- |
+| **Coyote-Sprung** | 3–6 Frames nach der Kante | +0,05x | +0,45x | Mittel |
+| **Kanten-Abschneiden (Ledge Truncation)** | 1–2 Frames am Kamm | +0,20x | +0,10x | Schwer |
+| **Sprint-Slide-Hop** | Direkte Momentum-Kopplung | -0,10x | +0,85x | Einfach |
+| **Corner Nudge** | Am Scheitelpunkt der Geometrie | +0,35x | +0,15x | Experte |
+| **Damage-Boost-Höhe** | Exakter Treffer-Frame | +0,60x | +0,30x | Schwer |
+
+Die Kombination aus Sprint-Trägheit und Kanten-Pufferung schaltet Areale frei, die von den Entwicklern eigentlich für spätere Upgrades vorgesehen waren. Obwohl diese Techniken präzises Timing erfordern, zeigt die Erfahrung der Spieler, dass das Beherrschen von Impulsvektoren den Zugang zu Dutzenden scheinbar unerreichbaren Sammelobjekten ermöglicht, ohne auf Ausrüstung aus dem Late-Game warten zu müssen.
+
+## Zugänglichkeit von Sammelobjekten nach Zone und Platzierung
+
+In jedem Spiel für Komplettisten lassen sich Gegenstände in bestimmte Umgebungskategorien einteilen. Um festzustellen, ob man **alles finden kann, was die Basissprung-Parameter** in komplexem Terrain erlauben, muss man erkennen, welche Sammelobjekte soft-locked und welche hard-locked sind.
+
+Soft-locked Items wirken zwar unzugänglich, lassen sich jedoch durch cleveres Routing, das Stapeln von Umgebungsobjekten oder Sprünge aus erhöhter Position erreichen. Im Gegensatz dazu befinden sich hard-locked Gegenstände in isolierten Zonen – freistehenden Säulen oder Decken ohne umliegende Geometrie –, für die eine sekundäre Fortbewegungsmechanik mathematisch zwingend erforderlich ist.
+
+```
+Erkundungs-Routing-Ablauf:
+[Sammelobjekt entdeckt] 
+       │
+       ├── Erhöhter Punkt in der Nähe? ──(Ja)──> Drop-Down-Gleiter / Sprint-Sprung
+       │
+       └── Isolierte Säule? 
+              ├── Objekte stapelbar? ──(Ja)──> Klettern & Springen
+              └── Nur glatte Geometrie? ───(Nein)───> Harte Mobilitäts-Barriere (Später zurückkehren)
+```
+
+| Zonenstruktur | Ziel-Sammelobjekt | Machbarkeit der Annäherung | Erforderliche Technik / Voraussetzung |
+| :--- | :--- | :--- | :--- |
+| **Start-Auen** | Feldmünzen & Relikte | 100 % Erreichbar | Standard-Laufsprung |
+| **Bröckelnde Ruinen** | Schwebende Splitter | 85 % Erreichbar | Coyote-Timing & Objektklettern |
+| **Vertikale Höhlen** | Truhen auf hohen Vorsprüngen | 40 % Erreichbar | Erfordert Kantenklammern / Wall-Bounce |
+| **Himmelsinseln** | Wolken-Marken | 15 % Erreichbar | Harte Mobilitäts-Barriere (Gleiter/Doppelsprung) |
+| **Überflutete Grotte** | Stalaktiten-Kugeln | 50 % Erreichbar | Impulserhaltung über Rampen |
+
+Bevor du Stunden damit verbringst, eine quälend knappe Sequenz zu versuchen, solltest du das umliegende Terrain genau inspizieren. Wenn ein Gegenstand über einer glatten Wand ohne interaktive Objekte oder erhöhte Annäherungswinkel liegt, ist dies ein klares Zeichen dafür, erst nach dem Freischalten fortschrittlicher Werkzeuge hierher zurückzukehren.
+
+## Umgebungsgeometrie: Die Spielwelt als Sprungbrett nutzen
+
+Wenn die reine Sprunghöhe nicht ausreicht, machen clevere Spieler die Umgebung zu einer Erweiterung ihres Bewegungsrepertoires. Unregelmäßige Geländemeshs, schräge Felsen und interaktive Physikobjekte können die Lücke zwischen Standardmobilität und schwer erreichbaren Zielen schließen.
+
+Viele moderne Titel bieten dynamische Physikobjekte wie Kisten, Fässer oder beweglichen Schutt. Schiebt man zwei Physikobjekte keilförmig an eine steile Wand, entsteht eine improvisierte Treppe, die deine Absprunghöhe effektiv um mehr als 150 % vergrößert. 
+
+| Oberflächen- / Objekttyp | Interaktionsmechanik | Höhenvorteil | Primärer Erkundungsnutzen |
+| :--- | :--- | :--- | :--- |
+| **Lose Holzkisten** | Schieben & Stapeln | +1,0x bis +2,0x Höhe | Zugang zu steilen Klippen |
+| **Schräge Felswände** | Steilhang-Surfen | +0,5x Höhen-Reset | Umgehen niedriger Klippen |
+| **Zaunpfähle & Geländer** | Präzisions-Standpunkt | +0,3x Basishöhe | Erreichen des optimalen Scheitelpunkts |
+| **Interaktive Druckschalter** | Temporäre Plattform | Je nach Rätsel unterschiedlich | Zeitgestützte Vorsprungssprünge |
+| **Zerstörbare Trümmer** | Kollisionssprung in der Luft | +0,4x Sofortiger Auftrieb | Überwinden von Abgrund-Hindernissen |
+
+Berichte aus der Community verdeutlichen immer wieder, wie Physikobjekte die beabsichtigten Fortschrittsbarrieren aushebeln. Kann ein Umgebungsobjekt getragen oder in Richtung eines Hindernisses gestoßen werden, lassen sich Höhenbeschränkungen oft umgehen, ohne auf spätere Mobilitäts-Upgrades warten zu müssen.
+
+## Community-Routing und Sequence-Breaking-Strategien
+
+In der Speedrunning- und Komplettisten-Community hat sich das Erforschen dessen, wie man **alles finden kann, was die Grenzen des Basissprungs** vorgeben, zu einer eigenen Disziplin entwickelt. Routenplaner kartieren systematisch „Low-Mobility-100%“-Pfade, die Backtracking auf ein Minimum reduzieren.
+
+Anstatt Sammelrouten von unten nach oben anzugehen, suchen erfahrene Runner nach dem höchsten geografischen Punkt in einem offenen Gebiet. Einmal auf der maximalen Höhe angekommen, lässt sich vertikale Höhe in horizontale Distanz umwandeln, um Plattformen von oben herab zu erreichen, die andernfalls einen Hochsprung oder Enterhaken erfordern würden. Umfangreiche Routing-Datenbanken und Speedrun-Analysen lassen sich in aktiven Bereichen wie den [Steam Community Game Hubs](https://steamcommunity.com) finden, um zu sehen, wie andere Sammler 100%-Runs ganz ohne Upgrades planen.
+
+Wenn Community-Mitglieder analysieren, ob man **alles finden kann, was Basissprung-Setups** ohne Backtracking bewältigen können, liegt der allgemeine Konsens bei etwa 70 % bis 80 % der gesamten Gegenstände in typischen Adventure-Layouts. Die restlichen Items befinden sich hinter geskripteten Barrieren, Air-Dash-Abgründen oder vertikalen Schächten mit reibungsfreien Oberflächen.
+
+## Praktische Tipps zur Maximierung der Erkundung mit dem Basissprung
+
+Um deine Abschlussquote allein mit den Standardfähigkeiten an das mathematische Limit zu treiben, solltest du dir diese grundlegenden Bewegungsgewohnheiten aneignen:
+
+- **Sprünge immer aus dem vollen Sprint ansetzen:** Statische Sprünge verschenken über 60 % der potenziellen horizontalen Weite. Halte dein Momentum voll aufrecht, bevor du eine Kante verlässt.
+- **Wandkanten und Ecken eng anvisieren:** Konkave Wandecken weisen oft mikroskopisch kleine horizontale Kollisionsebenen auf. Wiederholtes Springen bei gleichzeitigem Drücken in die Ecke kann dich auf unsichtbaren Geländenähten „einhaken“ lassen.
+- **Nach Drop-Ins aus großer Höhe Ausschau halten:** Befindet sich ein Sammelobjekt auf einem isolierten Monolithen, suche den Horizont nach benachbarten Bergrücken ab. Hinabzugleiten, zu fallen oder im Sprint nach unten zu springen ist prinzipiell einfacher, als nach oben zu klettern.
+- **Physikobjekte frühzeitig nutzen:** Bevor du ein Areal mit leeren Händen verlässt, halte Ausschau nach beweglichen Fässern, Karren oder Möbelstücken, die sich unter hohen Vorsprüngen platzieren lassen.
+- **Unerreichbare Entdeckungen markieren:** Verschwende keine Zeit an hard-locked Stellen. Markiere unerreichbare Gegenstände mit benutzerdefinierten Pins auf deiner Karte, um sie zügig einzusammeln, sobald du spätere Upgrades freigeschaltet hast.
+
+## Häufig gestellte Fragen (FAQ)
+
+### Kann man mit der Basissprung-Mechanik bereits im ersten Durchlauf alles finden?
+Nein, man kann allein mit der Basissprung-Mechanik keine 100 % der Sammelobjekte finden. Zwar können erfahrene Spieler mithilfe von Momentum-Tricks und Geometrie-Boosts 70 % bis 80 % der Items ergattern, doch Entwickler platzieren bestimmte Gegenstände ganz bewusst hinter harten Mobilitäts-Barrieren wie Doppelsprüngen, Enterhaken oder Gleitern.
+
+### Was ist der effektivste Trick, um die Sprungweite des Basissprungs zu erhöhen?
+Die verlässlichste Methode ist das Beherrschen der Coyote Time in Kombination mit einem schwungvollen Laufsprung. Indem du nach dem Überlaufen der Klippenkante noch 2 bis 4 Frames wartest, bevor du die Sprungtaste drückst, gewinnst du spürbar an horizontaler Reichweite, um weite Klüfte zu überbrücken.
+
+### Woran erkennt man, dass ein Gegenstand mit der Anfangsbewegung absolut unmöglich zu erreichen ist?
+Ein Gegenstand ist in der Regel unerreichbar, wenn er frei im Raum schwebt – ohne Wände, erhöhte Vorsprünge oder bewegliche Objekte in der Nähe – und sich höher als das 1,5-Fache deiner Basissprunghöhe befindet. Gibt es keinerlei Umgebungskollisionen zum Erklimmen oder Hinabspringen, ist das Item definitiv hinter künftigen Fortbewegungs-Upgrades verschlossen.

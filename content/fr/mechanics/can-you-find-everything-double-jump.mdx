@@ -1,0 +1,138 @@
+export const metadata = {
+  title: "Comment maîtriser le double saut dans Can You Find Everything pour le 100 %",
+  description: "Maîtrisez les mécaniques d'exploration verticale ! Découvrez comment débloquer, synchroniser et optimiser le double saut de Can You Find Everything pour atteindre tous les secrets cachés.",
+  category: "mechanics",
+  date: "2026-10-05",
+}
+
+Maîtriser la mobilité aérienne représente le tournant décisif de tout défi d'exploration et de plateforme. Face à des énigmes verticales, apprendre à exploiter le **double saut de Can You Find Everything** peut faire toute la différence entre rester bloqué dans les niveaux inférieurs et rafler l'intégralité des collectibles cachés. De nombreux complétionnistes se demandent comment les capacités de mouvement initiales interagissent avec les limites environnementales : maîtriser le **double saut de Can You Find Everything** vous ouvrira l'accès à des perchoirs élevés et à des passages secrets qui semblaient autrefois totalement inaccessibles.
+
+Que vous fassiez du backtracking dans les zones de départ ou que vous parcouriez les terrains périlleux de fin de jeu, votre portée verticale dicte votre vitesse de progression. Les mécaniques de déplacement régissent l'ensemble de votre itinéraire à travers ces cartes tentaculaires. Sans un sens aigu du timing et une parfaite compréhension de la physique aérienne, de précieux objets resteront hors de portée sur des promontoires lointains. Ce guide décortique les fenêtres de saisie (input frames), les distances franchissables, les possibilités de sequence breaking et les synergies de mobilité pour vous assurer qu'aucun trésor ne soit laissé de côté.
+
+---
+
+## Analyse des mécaniques : comprendre la physique aérienne et les fenêtres d'activation
+
+Chaque amélioration de mobilité verticale repose sur trois variables principales : la vitesse d'impulsion initiale, l'accélération gravitationnelle et le timing d'activation dans les airs. Lors de l'exécution d'un second bond en plein vol, le moteur physique réinitialise l'élan vertical, remplaçant la vitesse descendante accumulée par une impulsion ascendante instantanée.
+
+Il est fondamental de comprendre comment se comporte cette impulsion secondaire par rapport à l'apogée de votre saut initial. Si vous déclenchez votre second saut pendant la phase ascendante, votre impulsion vers le haut se cumule, vous conférant la hauteur totale maximale. À l'inverse, attendre d'avoir atteint l'apogée avant de sauter vous permet de prolonger votre distance de vol plané horizontal au-dessus de larges ravins.
+
+```
+       Apogée du saut 1
+          ▲
+         / \  <-- Déclencheur de hauteur maximale
+        /   \
+Départ ─┘     \  <-- Déclencheur de distance horizontale maximale
+              ▼
+```
+
+Le timing détermine le résultat. Les retours de la communauté indiquent que le tampon de commandes (input buffering) joue un rôle direct dans la souplesse de la mécanique selon les fréquences d'images. Pour maximiser la hauteur verticale, la commande doit être entrée dans une fenêtre extrêmement étroite, juste avant que la vitesse ascensionnelle ne tombe à zéro.
+
+Le tableau ci-dessous illustre comment le timing de la commande par rapport à votre impulsion initiale modifie la trajectoire de la manœuvre.
+
+| Phase de timing de commande | Modificateur de vélocité verticale | Pourcentage de hauteur totale | Distance horizontale parcourue | Cas d'usage stratégique principal |
+| :--- | :--- | :--- | :--- | :--- |
+| **Immédiat (Double frappe)** | Vecteur ascendant +100 % | 82 % de la hauteur max | Minimale (portée 15–20 %) | Petits rebords rapides, esquive de dangers |
+| **Mi-ascension** | Vecteur combiné +120 % | 94 % de la hauteur max | Modérée (portée 45–55 %) | Franchissement d'obstacles moyens |
+| **Apogée exacte** | Nouveau vecteur ascendant +100 % | 100 % (Maximum possible) | Équilibrée (portée 60–70 %) | Atteindre les corniches secrètes élevées |
+| **Début de descente** | Atténue la vitesse de chute | 65 % de la hauteur max | Élevée (portée 85–95 %) | Traversée de larges gouffres sans fond |
+| **Chute tardive (Vitesse terminale)** | Inefficace / impulsion minime | 25–30 % de la hauteur max | Étendue (récupération d'urgence) | Sauvetage in extremis des fosses mortelles |
+
+S'entraîner au **double saut de Can You Find Everything** dans des conditions contrôlées permet d'assimiler ces trajectoires distinctes. Plutôt que de vous en remettre au hasard, fiez-vous aux repères audio et aux volutes de poussière visuelles pour caler le rythme exact requis lors des séquences de plateforme millimétrées.
+
+---
+
+## Optimisation des itinéraires et tracé des collectibles
+
+Viser le 100 % nécessite des tracés optimisés afin de ne pas perdre des heures à revenir sans cesse sur vos pas à travers des cartes gigantesques. Dans les jeux axés sur l'exploration, les développeurs bloquent fréquemment l'accès aux secrets majeurs à l'aide de seuils d'élévation subtils. Une falaise qui semble trop haute de deux mètres est presque toujours un obstacle délibéré conçu pour tester votre maîtrise des techniques aériennes.
+
+Lors de la planification de votre itinéraire, catégorisez les secteurs de la carte en fonction des exigences de déplacement. Les premières zones proposent généralement des récompenses faciles d'accès avec un simple saut, tandis que les zones intermédiaires et de fin de jeu cumulent les pièges : plateformes instables, bourrasques de vent variables et zones d'atterrissage très réduites.
+
+Pour trouver des itinéraires vérifiés et testés par la communauté, de nombreux joueurs consultent les [guides de la communauté Steam](https://steamcommunity.com) afin de recouper les coordonnées des collectibles cachés et les trajectoires de speedrun.
+
+Le tableau comparatif ci-dessous oppose le saut simple de base aux manœuvres aériennes complètes face aux obstacles environnementaux courants :
+
+| Catégorie d'obstacle | Dégagement vertical requis | Saut simple viable ? | Taux de réussite au double saut | Priorité de backtracking |
+| :--- | :--- | :--- | :--- | :--- |
+| **Affleurement rocheux standard** | 1,5 – 2,0 mètres | Oui (avec sprint) | 100 % (Sans effort) | Faible (À franchir dès la première visite) |
+| **Flèche rocheuse en surplomb** | 3,2 – 3,8 mètres | Non | 95 % (Exige un timing à l'apogée) | Élevée (À revisiter après amélioration) |
+| **Gouffre au sol friable** | 6,0 – 8,0 mètres de large | Non | 88 % (Nécessite un second saut retardé) | Moyenne (Itinéraire après déblocage du dash) |
+| **Alcôve murale en retrait** | 4,0 mètres verticaux + rebord | Non | 72 % (Exige apogée + ajustement directionnel) | Critique (Contient des objets rares) |
+| **Chaîne d'îles célestes flottantes** | Variable / Mouvante | Non | 60 % (Exige des micro-ajustements) | Critique (Zone de complétion de fin de jeu) |
+
+Une fois l'amélioration débloquée, tester le **double saut de Can You Find Everything** au-dessus de larges gouffres permet de révéler des points d'appui insoupçonnés, invisibles depuis le sol. Tenir une liste des objets hors de portée garantit que vos sessions de backtracking restent productives au lieu de se transformer en errance.
+
+---
+
+## Techniques de mouvement avancées : étendre votre portée aérienne
+
+Le double saut basique suffit pour atteindre les plateformes standards, mais débusquer les secrets les plus cryptiques exige de maîtriser des techniques de conservation d'élan avancées. L'expérience montre qu'associer les commandes élémentaires avec la géométrie du décor permet d'augmenter considérablement la hauteur de saut et le temps de sustentation.
+
+### Annulation de rebord (Ledge Canceling) et rebonds muraux
+
+Lorsque votre personnage percute une surface verticale, les modèles de friction offrent souvent une brève opportunité de réorienter son élan. En orientant votre trajectoire vers un mur incliné et en retardant votre second saut jusqu'au point de contact, vous pouvez convertir les ricochets diagonaux en pure propulsion verticale. Cela permet d'escalader des parois dépourvues de points d'accroche dédiés.
+
+### Enchaînement de dash et conservation de l'élan aérien
+
+Si votre équipement comprend une accélération horizontale ou une mécanique de dash, l'ordre d'activation de vos compétences modifie radicalement votre trajectoire :
+
+1. **Dash d'abord, saut ensuite :** Conserve la vitesse horizontale et propulse votre personnage vers l'avant selon un arc tendu et ultra-rapide.
+2. **Saut d'abord, dash à l'apogée, second saut :** Crée une trajectoire allongée en « S », idéale pour slalomer dans des couloirs hérissés de pointes.
+3. **Double saut suivi d'un air dash tardif :** Maximise la hauteur pure tout en offrant une marge de sécurité horizontale pour sécuriser les atterrissages éloignés.
+
+Le tableau ci-dessous détaille l'exécution technique et le gain d'efficacité des enchaînements de mouvements experts :
+
+| Technique avancée | Séquence de commandes | Difficulté d'exécution | Multiplicateur de gain de hauteur | Multiplicateur de portée horizontale |
+| :--- | :--- | :--- | :--- | :--- |
+| **Foulée d'apogée (Apex Stride)** | Saut > Attendre l'apogée > Saut | Faible | 1.0x (Valeur de référence) | 1.0x (Valeur de référence) |
+| **Annulation de dash avec élan** | Sprint > Saut > Dash > Second saut | Moyenne | 0.85x | 1.75x |
+| **Boost par friction murale** | Saut > Contact mural > Second saut > S'écarter | Élevée | 1.35x | 0.60x |
+| **Extension de rebord Coyote** | Quitter le bord en marchant > Saut 1 tardif > Saut 2 à l'apogée | Élevée | 1.10x | 1.45x |
+| **Manœuvre de saut avec recul** | Saut 1 > Frappe vers le bas / Recul d'arme > Saut 2 | Expert | 1.50x+ | 0.80x |
+
+Combiner l'élan brut avec le **double saut de Can You Find Everything** confère une portée horizontale maximale, vous permettant de contourner de longs puzzles annexes et de saisir les collectibles directement dans les airs.
+
+---
+
+## Erreurs courantes et résolution des problèmes de déplacement
+
+Même les joueurs chevronnés font face à des moments de frustration lors des passages demandant une grande précision. La plupart des sauts ratés proviennent d'une mauvaise appréciation de la latence des commandes, de la hitbox du personnage ou de l'impact de la vitesse terminale lors des phases sous pression.
+
+Une erreur fréquemment constatée concerne le mauvais timing des commandes, ce qui bride les capacités réelles du **double saut de Can You Find Everything**. Appuyer frénétiquement sur la touche de saut secondaire en paniquant lors d'une longue chute réduit drastiquement la hauteur de récupération en raison de la force de gravité accumulée.
+
+| Erreur courante | Cause principale | Impact négatif sur le déplacement | Action corrective |
+| :--- | :--- | :--- | :--- |
+| **Spam de touches (Double appui rapide)** | Panique ou impatience | Réduit la hauteur potentielle du saut de 15 à 20 % | Marquez un demi-temps d'arrêt avant de réappuyer |
+| **Changement de direction prématuré** | Inclinaison du joystick en pleine montée | Annule brutalement l'élan vers l'avant | Maintenez le vecteur directionnel jusqu'à l'apogée |
+| **Chute des corniches à l'aveugle** | Oubli des limites du « coyote time » | Consomme le premier saut, ne laissant qu'un bond | Initiez le saut avant de quitter la terre ferme |
+| **Ignorer le vent / les aléas météo** | Forces extérieures non prises en compte | Décroche le personnage de sa trajectoire idéale | Inclinez-vous face aux courants pour compenser la dérive |
+| **Dépendance excessive à la saisie de corniche** | Mauvaise évaluation de la distance au bord | Entraîne des prises manquées et des chutes mortelles | Visez un atterrissage sur sol ferme plutôt que sur l'arête |
+
+Pour vérifier la solidité de vos bases de déplacement, mettez à l'épreuve le **double saut de Can You Find Everything** sur des corniches de référence dans les zones de départ sans danger avant d'affronter les parcours périlleux de fin d'aventure.
+
+---
+
+## Checklist du complétionniste : maximiser la récolte des collectibles
+
+Avant de quitter définitivement une région, appliquez ce protocole de vérification méthodique pour vous assurer qu'aucune salle secrète ou item en lévitation n'a été oublié :
+
+- [ ] Inspectez les puits verticaux à la recherche de murs destructibles ou de faux plafonds.
+- [ ] Scrutez chaque ravin pour voir si un vol plané prolongé ne révèle pas une galerie inférieure dérobée.
+- [ ] Revisitez les premières énigmes environnementales dont les plateformes semblaient trop éloignées.
+- [ ] Utilisez des sauts à l'apogée pour obtenir une perspective aérienne au-dessus des canopées denses et des bâtiments.
+- [ ] Recoupez votre total d'objets collectés par zone avec les chiffres totaux de la carte globale.
+
+Une exploration systématique couplée à une mécanique aérienne affûtée garantit que l'obtention du 100 % soit une victoire fluide et gratifiante, plutôt qu'un cycle d'essais et d'erreurs interminable.
+
+---
+
+## Foire aux questions
+
+### Pourquoi le double saut de Can You Find Everything est-il essentiel pour les complétionnistes ?
+Cette amélioration constitue une clé de voûte de la progression dans les jeux d'exploration. Sans la hauteur et le temps d'antenne supplémentaires octroyés par le second saut, une multitude de rebords, d'alcôves cachées et de bonus suspendus demeurent strictement impossibles à atteindre. Maîtriser cette mécanique permet de franchir les barrières d'énigmes, d'accéder à des postes d'observation dissimulés et de compléter le registre de collecte de chaque secteur.
+
+### Peut-on contourner les blocages de progression plus tôt grâce au double saut de Can You Find Everything ?
+Dans bien des cas, oui. En associant un saut synchronisé à l'apogée avec des techniques de conservation de vitesse (comme l'inertie du sprint ou l'annulation de dash), les joueurs aguerris peuvent atteindre des plateformes que les créateurs du jeu destinaient à des compétences ultérieures. Les speedrunners utilisent couramment ces gains d'impulsion pour briser la linéarité du jeu (sequence breaking) et récupérer des équipements avancés en avance.
+
+### Comment régler les problèmes d'enregistrement du second saut ?
+Un second saut qui ne répond pas est généralement le signe d'une latence d'affichage (input lag) ou d'un dépassement de la fenêtre d'activation autorisée. Si votre personnage glisse trop bas d'une corniche sans sauter au préalable, le moteur considère ce pas dans le vide comme le saut initial, consommant votre double saut en guise de saut de secours immédiat. Pensez à sauter *avant* de quitter la plateforme, et évitez d'appuyer deux fois plus vite que ce que le taux de rafraîchissement de votre écran peut traiter.

@@ -1,0 +1,114 @@
+export const metadata = {
+  title: "Guía del salto básico de Can You Find Everything: límites, secretos y mecánicas",
+  description: "¿Te preguntas si puedes alcanzar el 100 % de completación con el movimiento inicial? Descubre los límites, rutas ocultas y mecánicas en nuestra guía completa.",
+  category: "mechanics",
+  date: "2026-10-05",
+}
+
+Cualquier entusiasta de la exploración conoce la repentina frustración de divisar un atractivo coleccionable flotando justo fuera de su alcance en una cornisa lejana. Al embarcarse en una amplia búsqueda de objetos, los jugadores se preguntan de inmediato: **¿se puede encontrar todo con el salto básico** que permite el movimiento inicial, o hay objetos clave bloqueados permanentemente tras mejoras de movilidad? Comprender si **puedes encontrar todo con el salto básico** y las mecánicas que ofrece es esencial antes de dedicar horas a registrar cada rincón del mapa.
+
+Si bien el movimiento fundamental permite conseguir una gran parte de los primeros secretos, la recolección completa de objetos depende en gran medida de comprender las cajas de colisión (bounding boxes), la colisión con el entorno y la conservación del impulso. Este desglose exhaustivo de mecánicas analiza el alcance vertical, los trucos avanzados de inercia y la física del entorno para revelar los límites absolutos de las mecánicas del salto inicial.
+
+## Comprender la movilidad inicial: márgenes y umbrales de altura
+
+En su esencia, un salto inicial proporciona un impulso vertical estático combinado con un arco predecible determinado por los parámetros de gravedad y la velocidad horizontal. En la física de desplazamiento estándar, evaluar cómo **puedes encontrar todo lo que las rutas de salto básico** hacen posible requiere calcular las unidades verticales y el tiempo de suspensión lateral. Los desarrolladores suelen diseñar las zonas iniciales con incrementos de cornisa estandarizados, lo que significa que ciertas fichas flotantes y cofres están matemáticamente adaptados a la altura de tu salto base.
+
+Cuando un personaje se despega del suelo, la velocidad terminal y la aceleración ascendente determinan el punto culminante o ápice. Si un coleccionable se encuentra incluso una fracción de unidad por encima de ese ápice, el salto vertical directo fallará. Sin embargo, el desplazamiento horizontal y el impulso direccional introducen variaciones significativas en si un jugador aterriza con precisión o se resbala por una pendiente.
+
+| Arquetipo de salto | Margen vertical | Alcance horizontal | Tiempo en el aire | Coleccionables alcanzables est. |
+| :--- | :--- | :--- | :--- | :--- |
+| **Salto estándar estático** | 1.00x unidad base | 0.80x unidad base | 0.65 s | ~35 % de los secretos del mapa |
+| **Salto en carrera completa** | 1.05x unidad base | 2.20x unidad base | 0.72 s | ~65 % de los secretos del mapa |
+| **Salto de borde con tiempo coyote** | 1.05x unidad base | 2.65x unidad base | 0.80 s | ~78 % de los secretos del mapa |
+| **Impulso asistido por pendiente** | 1.45x unidad base | 2.10x unidad base | 0.95 s | ~84 % de los secretos del mapa |
+| **Doble salto mejorado** | 2.10x unidad base | 3.50x unidad base | 1.30 s | 100 % de los secretos del mapa |
+
+Como se demuestra en el desglose de márgenes, depender estrictamente de un salto estático reduce drásticamente tu potencial de descubrimiento. Pasar de un salto neutro a una zancada con impulso completo duplica de inmediato tu radio de exploración horizontal.
+
+## Aprovechamiento de físicas: llevando los saltos básicos más allá de los límites predeterminados
+
+Los jugadores dedicados a completar los juegos rara vez aceptan los muros invisibles o los límites de altura de buenas a primeras. Al poner a prueba si **puedes encontrar todo lo que las físicas del salto básico** permiten en los primeros niveles, dominar las particularidades del motor del juego se vuelve obligatorio. Incluso sin dobles saltos, carreras por paredes o ganchos de agarre, los jugadores pueden ampliar notablemente su rango de movimiento manipulando las físicas fundamentales.
+
+Una técnica crucial es aprovechar el «coyote time» (tiempo coyote): la breve ventana de fotogramas en la que el motor del juego todavía acepta la pulsación de salto después de que la cápsula de colisión de tu personaje deja de pisar suelo firme. Activar el salto en el último instante de este margen te permite cruzar amplios precipicios que en principio parecían imposibles.
+
+| Nombre de la técnica | Ventana de acción | Ganancia vertical | Ganancia horizontal | Nivel de dificultad |
+| :--- | :--- | :--- | :--- | :--- |
+| **Salto coyote** | 3–6 fotogramas tras el borde | +0.05x | +0.45x | Moderado |
+| **Truncamiento de cornisa** | 1–2 fotogramas en la cresta | +0.20x | +0.10x | Difícil |
+| **Salto con deslizamiento en sprint** | Enlace directo de inercia | -0.10x | +0.85x | Fácil |
+| **Empuje en esquina** | En el vértice de la geometría | +0.35x | +0.15x | Experto |
+| **Elevación por daño (Damage Boost)** | Fotograma exacto del impacto | +0.60x | +0.30x | Difícil |
+
+Combinar la inercia del sprint con la amortiguación del borde desbloquea zonas diseñadas por los desarrolladores para requerir mejoras posteriores. Aunque estas técnicas demandan una sincronización precisa, la experiencia de los jugadores demuestra que dominar los vectores de impulso permite acceder a docenas de objetos fuera de alcance sin tener que esperar a conseguir equipo avanzado.
+
+## Accesibilidad de coleccionables por zona y ubicación
+
+En cualquier título enfocado a completistas, los objetos se dividen en distintas categorías ambientales. Determinar si **puedes encontrar todo lo que los parámetros del salto básico** permiten a través de terrenos complejos requiere distinguir qué coleccionables tienen un bloqueo relativo (soft-lock) frente a un bloqueo estricto (hard-lock).
+
+Los objetos con bloqueo relativo parecen inaccesibles a simple vista, pero una ruta inteligente, el apilamiento de objetos del entorno o dejarse caer desde puntos elevados pueden permitirte conseguirlos. Por el contrario, los objetos con bloqueo estricto se encuentran en zonas aisladas —pilares solitarios o techos desprovistos de geometría cercana— donde una mecánica secundaria de propulsión resulta matemáticamente obligatoria.
+
+```
+Flujo de rutas de exploración:
+[Divisar coleccionable] 
+       │
+       ├── ¿Terreno elevado cercano? ──(Sí)──> Descenso planeando / Salto en carrera
+       │
+       └── ¿Pilar aislado? 
+              ├── ¿Objetos apilables disponibles? ──(Sí)──> Trepar y saltar
+              └── ¿Solo geometría lisa? ───(No)───> Bloqueo estricto de movilidad (Volver más tarde)
+```
+
+| Estructura de zona | Coleccionable objetivo | Viabilidad de aproximación | Técnica requerida / Requisito previo |
+| :--- | :--- | :--- | :--- |
+| **Praderas iniciales** | Monedas y reliquias de campo | 100 % alcanzable | Salto estándar en carrera |
+| **Ruinas derrumbadas** | Fragmentos flotantes | 85 % alcanzable | Timing coyote y escalada con objetos |
+| **Cavernas verticales** | Cofres en cornisas altas | 40 % alcanzable | Requiere agarre de cornisa / rebote en pared |
+| **Islas celestiales** | Fichas en las nubes | 15 % alcanzable | Bloqueo estricto de movilidad (Planeador / Doble salto) |
+| **Gruta sumergida** | Orbes en estalactitas | 50 % alcanzable | Conservación de inercia desde rampas |
+
+Antes de invertir horas intentando una secuencia extremadamente ajustada, examina el terreno circundante. Si un objeto descansa sobre una pared lisa sin elementos interactivos ni ángulos de aproximación elevados, es una señal clara de que debes regresar más adelante tras conseguir herramientas avanzadas.
+
+## Geometría del entorno: usar el mundo como trampolín
+
+Cuando la altura pura de salto no basta, los jugadores inteligentes convierten el entorno en una extensión de su repertorio de movimientos. Las mallas de terreno irregular, las rocas inclinadas y los objetos físicos interactivos pueden acortar la distancia entre la movilidad básica y los objetivos difíciles de alcanzar.
+
+Muchos títulos modernos cuentan con objetos físicos dinámicos como cajas, barriles o escombros móviles. Colocar dos objetos físicos en cuña contra una pared vertical crea una escalera improvisada, aumentando de manera efectiva la altura de inicio de tu salto en más de un 150 %.
+
+| Tipo de superficie / objeto | Mecánica de interacción | Ventaja de elevación | Uso principal de exploración |
+| :--- | :--- | :--- | :--- |
+| **Cajas de madera sueltas** | Empujar y apilar | +1.0x a +2.0x de altura | Acceso a riscos elevados |
+| **Caras de rocas inclinadas** | Deslizamiento por pendiente pronunciada | +0.5x reinicio de altura | Superar riscos bajos |
+| **Postes de vallas y barandillas** | Apoyo de precisión | +0.3x elevación base | Ganar ventaja en el ápice |
+| **Pulsadores interactivos** | Plataforma temporal | Varía según el puzle | Impulsos temporizados hacia cornisas |
+| **Escombros destructibles** | Rebote por colisión en el aire | +0.4x elevación instantánea | Superar abismos y obstáculos |
+
+Los reportes de la comunidad destacan con frecuencia cómo los elementos interactivos del entorno desmantelan las barreras de progresión previstas. Si un objeto del escenario se puede transportar o patear hacia un obstáculo, es posible eludir las restricciones de altura sin necesidad de esperar a desbloquear mejoras de movilidad.
+
+## Rutas de la comunidad y estrategias de sequence breaking
+
+En los speedruns y desafíos de completismo de la comunidad, descubrir si **puedes encontrar todo lo que los límites del salto básico** dictan se ha convertido en una disciplina propia. Quienes planifican rutas trazan de forma sistemática recorridos de «100 % con baja movilidad» para minimizar la necesidad de volver sobre sus pasos (backtracking).
+
+En lugar de aproximarse a las rutas de coleccionables desde abajo hacia arriba, los jugadores veteranos buscan el punto geográfico más alto en una zona abierta. Una vez en la elevación máxima, es posible cambiar altura vertical por distancia horizontal, descendiendo a través de plataformas que de otro modo exigirían un salto alto o un gancho. Puedes consultar amplias bases de datos de rutas y desgloses de speedruns en espacios activos como los [centros de la comunidad de Steam](https://steamcommunity.com) para ver cómo otros coleccionistas trazan rutas de completación sin mejoras.
+
+Al analizar si **puedes encontrar todo lo que una configuración de salto básico** permite sin retroceder más adelante, el consenso general se sitúa entre el 70 % y el 80 % del total de objetos en los esquemas de aventura estándar. El porcentaje restante se encuentra tras barreras con secuencias predefinidas, huecos que exigen impulsos aéreos (air dash) o pozos verticales diseñados con superficies sin fricción.
+
+## Consejos prácticos para maximizar la exploración con el salto básico
+
+Para llevar tu porcentaje de completación al límite matemático utilizando únicamente las habilidades por defecto, adopta estos hábitos de movimiento fundamentales:
+
+- **Inicia siempre los saltos desde un sprint completo:** Los saltos estáticos desperdician más del 60 % del alcance horizontal potencial. Mantén la inercia al máximo antes de abandonar cualquier borde.
+- **Pégate a los vértices de las paredes:** Las esquinas cóncavas a menudo contienen planos de colisión horizontal microscópicos. Saltar repetidamente mientras presionas hacia la esquina puede hacer que tu personaje se «enganche» a uniones invisibles del terreno.
+- **Busca caídas desde gran altura:** Si un coleccionable descansa en un monolito aislado, escanea el horizonte en busca de crestas montañosas adyacentes. Planear, dejarse caer o lanzarse en carrera hacia abajo resulta universalmente más fácil que trepar hacia arriba.
+- **Manipula objetos físicos desde el principio:** Antes de marcharte de un área con las manos vacías, busca barriles, carretas o muebles móviles que puedan colocarse debajo de cornisas elevadas.
+- **Lleva un registro de los descubrimientos inalcanzables:** Evita perder tiempo en puntos con bloqueo estricto. Marca los objetos inalcanzables en tu mapa con marcadores personalizados para recogerlos rápidamente una vez desbloquees las mejoras avanzadas.
+
+## Preguntas frecuentes
+
+### ¿Se puede encontrar todo con las mecánicas de salto básico en la primera partida?
+No, no es posible encontrar el 100 % de los coleccionables únicamente con las mecánicas de salto básico. Aunque los jugadores más habilidosos pueden obtener entre el 70 % y el 80 % de los objetos mediante trucos de inercia y aprovechamiento de la geometría, los desarrolladores colocan deliberadamente ciertos elementos tras barreras estrictas de movilidad como dobles saltos, ganchos de agarre y planeadores.
+
+### ¿Cuál es el truco más efectivo para aumentar la distancia del salto básico?
+El método más fiable consiste en dominar el tiempo coyote (coyote time) combinado con un salto iniciado tras un sprint. Al esperar entre 2 y 4 fotogramas después de rebasar el borde de un precipicio antes de pulsar el botón de salto, obtendrás un alcance horizontal sustancial capaz de cruzar grandes vacíos.
+
+### ¿Cómo sé si un objeto es totalmente imposible con el movimiento inicial?
+Un objeto suele ser imposible si flota en un espacio abierto sin paredes cercanas, apoyos elevados ni objetos móviles, y se encuentra a una altura superior a 1,5 veces la de tu salto base. Si no hay colisiones del entorno que permitan trepar o dejarse caer desde arriba, el objeto cuenta con un bloqueo estricto que requiere mejoras de movimiento futuras.

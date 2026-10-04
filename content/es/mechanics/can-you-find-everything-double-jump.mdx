@@ -1,0 +1,138 @@
+export const metadata = {
+  title: "Cómo dominar el doble salto de Can You Find Everything para completarlo al 100%",
+  description: "¡Domina las mecánicas de exploración vertical! Descubre cómo desbloquear, calcular el tiempo y optimizar el doble salto para alcanzar todos los secretos ocultos.",
+  category: "mechanics",
+  date: "2026-10-05",
+}
+
+Dominar la movilidad aérea es el punto de inflexión definitivo en cualquier desafío de exploración y plataformas. Al enfrentarse a acertijos verticales, aprender a aprovechar el **doble salto de Can You Find Everything** puede marcar la diferencia entre quedarse atrapado en los niveles inferiores y recoger cada coleccionable oculto. Muchos completistas se preguntan cómo interactúan las habilidades iniciales de movimiento con los límites del entorno, y dominar el **doble salto de Can You Find Everything** desbloqueará cornisas elevadas y caminos secretos que antes parecían completamente inalcanzables.
+
+Ya sea que estés haciendo backtracking por zonas introductorias o trazando rutas en peligrosos terrenos del juego avanzado, el alcance vertical dicta la rapidez con la que progresas. Las mecánicas de movimiento rigen toda tu ruta a través de mapas extensos. Sin una sincronización depurada y un firme control de la física en el aire, los objetos valiosos quedarán justo fuera de tu alcance en salientes distantes. Esta guía analiza los fotogramas de entrada, las distancias de desplazamiento, las oportunidades de sequence breaking y las sinergias de movilidad para garantizar que ningún tesoro se quede atrás.
+
+---
+
+## Desglose de mecánicas: entendiendo la física aérea y las ventanas de entrada
+
+Cada mejora de movilidad vertical depende de tres variables principales: la velocidad de impulso inicial, la aceleración de la gravedad y la sincronización de activación en el aire. Al ejecutar un segundo salto en el aire, el motor de física reinicia el impulso vertical, reemplazando cualquier velocidad descendente acumulada por tu personaje con un impulso ascendente instantáneo.
+
+Entender cómo se comporta el impulso secundario en relación con el vértice (ápice) de tu salto inicial es fundamental. Si activas tu segundo salto mientras asciendes, tu impulso ascendente se acumula, otorgándote la máxima altura total. Por el contrario, activar el salto después de alcanzar el ápice te permite extender la distancia de planeo horizontal sobre amplios abismos.
+
+```
+       Ápice del salto 1
+          ▲
+         / \  <-- Activación de altura máxima
+        /   \
+Inicio ─┘     \  <-- Activación de distancia horizontal máxima
+              ▼
+```
+
+El tiempo lo dicta todo. Los informes de la comunidad indican que el búfer de entrada (input buffering) desempeña un papel activo en cuán permisiva resulta la mecánica en diferentes tasas de fotogramas. Para maximizar el alcance vertical, la pulsación debe realizarse dentro de una ventana diminuta justo antes de que la velocidad vertical caiga a cero.
+
+La siguiente tabla describe cómo la sincronización de la pulsación respecto a tu impulso inicial modifica el perfil de trayectoria de la maniobra.
+
+| Fase de sincronización de entrada | Modificador de velocidad vertical | Porcentaje de altura total | Distancia horizontal recorrida | Caso de uso estratégico principal |
+| :--- | :--- | :--- | :--- | :--- |
+| **Inmediata (doble toque)** | Vector ascendente +100% | 82% de la altura máxima | Mínima (rango del 15–20%) | Saltos rápidos a salientes, evasión de peligros |
+| **En pleno ascenso** | Vector combinado +120% | 94% de la altura máxima | Moderada (rango del 45–55%) | Superar obstáculos moderados |
+| **Ápice exacto** | Vector ascendente limpio +100% | 100% (Máximo posible) | Equilibrada (rango del 60–70%) | Alcanzar salientes secretos elevados |
+| **Descenso temprano** | Amortigua la velocidad descendente | 65% de la altura máxima | Alta (rango del 85–95%) | Cruzar abismos anchos y sin fondo |
+| **Caída tardía (caída terminal)**| Ineficaz / elevación mínima | 25–30% de la altura máxima | Extendida (recuperación de emergencia) | Salvarte de fosos letales |
+
+Practicar el **doble salto de Can You Find Everything** en condiciones controladas permite a los jugadores interiorizar estos arcos tan diferenciados. En lugar de depender de la intuición, prestar atención a las señales de audio y a las pequeñas nubes de polvo visuales te ayudará a fijar la cadencia exacta requerida para las secciones de plataformas más ajustadas.
+
+---
+
+## Optimización de rutas y trazado de coleccionables
+
+Alcanzar el 100% de finalización exige planificar rutas eficientes para no perder horas desandando tus pasos por mapas colosales. En los títulos centrados en la exploración, los desarrolladores suelen bloquear secretos de gran valor mediante sutiles umbrales de elevación. Un acantilado que parece estar dos metros por encima de tu alcance casi siempre es un punto de control intencional diseñado para poner a prueba tu dominio de las técnicas aéreas.
+
+Al diseñar tu ruta de exploración, categoriza las secciones del mapa según sus requisitos de movilidad. Las zonas iniciales suelen albergar recompensas fáciles accesibles mediante saltos básicos, mientras que las zonas intermedias y avanzadas acumulan peligros como plataformas que se derrumban, corrientes de aire cambiantes y cajas de colisión (hitboxes) de aterrizaje muy reducidas.
+
+Para descubrir estrategias verificadas y rutas probadas por la comunidad, muchos jugadores recurren a las [Steam Community guides](https://steamcommunity.com) con el fin de cotejar las coordenadas de coleccionables ocultos y rutas de speedrun.
+
+La siguiente matriz comparativa contrasta los saltos simples básicos frente a maniobras aéreas completas en diferentes obstáculos del entorno:
+
+| Categoría de obstáculo | Altura vertical requerida | ¿Salto simple viable? | Tasa de éxito con doble salto | Prioridad de backtracking |
+| :--- | :--- | :--- | :--- | :--- |
+| **Saliente de piedra estándar** | 1,5 – 2,0 metros | Sí (con esprint) | 100% (Sin esfuerzo) | Baja (superar en la primera visita) |
+| **Aguja de acantilado en voladizo** | 3,2 – 3,8 metros | No | 95% (Requiere sincronización en el ápice) | Alta (revisitar tras la mejora) |
+| **Abismo con suelo quebradizo** | 6,0 – 8,0 metros de ancho | No | 88% (Requiere segundo salto retardado) | Media (visitar tras desbloquear el dash) |
+| **Hueco de pared empotrado** | 4,0 metros verticales + borde | No | 72% (Requiere ápice + control direccional) | Crítica (contiene coleccionables raros) |
+| **Cadena de islas celestes flotantes** | Variable / En movimiento | No | 60% (Requiere microajustes) | Crítica (zona de compleción del juego avanzado) |
+
+Una vez que obtienes la mejora, poner a prueba el **doble salto de Can You Find Everything** a lo largo de amplios abismos revela puntos de apoyo ocultos que antes eran invisibles desde el suelo. Mantener una lista de verificación de objetos inalcanzables garantiza que tus recorridos de backtracking sigan siendo productivos en lugar de erráticos.
+
+---
+
+## Técnicas de movimiento avanzadas: ampliando tu alcance aéreo
+
+El doble salto básico te permite subir a plataformas normales, pero descubrir secretos crípticos exige comprender las técnicas avanzadas de inercia e impulso. La experiencia de los jugadores demuestra que combinar acciones básicas con las superficies del entorno genera aumentos drásticos tanto en la elevación vertical como en el tiempo en el aire horizontal.
+
+### Cancelación en salientes (Ledge Canceling) y rebotes en pared
+
+Cuando tu personaje choca contra una superficie vertical, los modelos de fricción a menudo conceden una ventana momentánea para redirigir el impulso. Al maniobrar hacia una pared inclinada y retrasar tu segundo salto hasta el contacto, puedes transformar los rebotes diagonales en pura elevación vertical. Esto te permite escalar superficies que carecen de puntos de agarre específicos.
+
+### Encadenamiento de desplazamientos (Dash Chaining) y conservación del impulso aéreo
+
+Si tu repertorio incluye una mecánica de impulso horizontal o desplazamiento rápido (dash), la secuencia en la que activas tus acciones alterará tu trayectoria de forma drástica:
+
+1. **Desplazamiento primero, salto después:** Conserva la velocidad horizontal, impulsando a tu personaje hacia adelante en un arco plano y de alta velocidad.
+2. **Salto primero, desplazamiento en el ápice, salto después:** Genera una trayectoria alargada en forma de «S», ideal para serpentear por pasillos flanqueados por pinchos.
+3. **Doble salto y desplazamiento aéreo tardío:** Maximiza la elevación pura al tiempo que ofrece una red de seguridad horizontal para afianzar aterrizajes lejanos.
+
+La siguiente tabla desglosa la ejecución técnica y el rendimiento de las combinaciones de movimiento de alto nivel:
+
+| Técnica avanzada | Secuencia de comandos | Dificultad de ejecución | Multiplicador de aumento de altura | Multiplicador de alcance horizontal |
+| :--- | :--- | :--- | :--- | :--- |
+| **Zancada en el ápice** | Salto > Esperar al ápice > Salto | Baja | 1,0x (base estándar) | 1,0x (base) |
+| **Cancelación de dash por inercia** | Esprint > Salto > Dash > Segundo salto | Media | 0,85x | 1,75x |
+| **Impulso por fricción de pared** | Salto > Toque en pared > Segundo salto > Alejarse | Alta | 1,35x | 0,60x |
+| **Extensión de saliente Coyote** | Caer del borde > Salto tardío 1 > Salto 2 en el ápice | Alta | 1,10x | 1,45x |
+| **Maniobra de salto con retroceso** | Salto 1 > Golpe descendente / Retroceso de arma > Salto 2 | Experto | 1,50x+ | 0,80x |
+
+Combinar el impulso puro con el **doble salto de Can You Find Everything** produce el máximo alcance horizontal, lo que te permite saltarte tediosos acertijos de desvío y recoger coleccionables directamente desde el aire.
+
+---
+
+## Errores comunes y solución a desafíos de desplazamiento
+
+Incluso los jugadores más experimentados se frustran al atravesar circuitos de obstáculos que exigen gran precisión. La mayoría de los saltos fallidos se deben a pequeñas confusiones sobre cómo interactúan la latencia de entrada, las cajas de impacto del personaje y la velocidad terminal durante secuencias críticas de plataformas.
+
+Una observación recurrente entre la comunidad es fallar la sincronización de las pulsaciones, lo que disminuye el potencial de lo que el **doble salto de Can You Find Everything** puede lograr. Pulsar el botón del segundo salto presa del pánico durante una caída prolongada reduce drásticamente la altura de recuperación debido a la aceleración acumulada por la gravedad.
+
+| Error común | Causa raíz | Impacto negativo en el desplazamiento | Acción correctiva |
+| :--- | :--- | :--- | :--- |
+| **Machacar botones (doble toque precipitado)** | Pánico o impaciencia | Reduce la altura potencial del salto entre un 15 y un 20% | Cuenta mentalmente una pausa deliberada antes de pulsar de nuevo |
+| **Cambio direccional prematuro** | Girar el joystick en pleno ascenso | Cancela bruscamente el impulso hacia adelante | Mantén el vector direccional hasta alcanzar el ápice |
+| **Caer de los bordes a ciegas** | Olvidar los límites del «coyote time» | Gasta el primer salto, dejando solo uno disponible | Inicia el salto antes de abandonar el terreno firme |
+| **Ignorar el viento u obstáculos del entorno**| Fuerzas externas no calculadas | Desvía al personaje del arco previsto | Apunta hacia la corriente para compensar la deriva |
+| **Depender en exceso del agarre de cornisas**| Calcular mal la distancia al borde | Provoca fallos de agarre y caídas al vacío | Procura aterrizar con paso firme en lugar de apurar el borde |
+
+Para comprobar si tus fundamentos de movimiento son sólidos, pon a prueba el **doble salto de Can You Find Everything** frente a salientes de referencia en zonas iniciales de bajo riesgo antes de enfrentarte a los peligrosos desafíos del juego avanzado.
+
+---
+
+## Lista de verificación para completistas: optimizando la recogida de coleccionables
+
+Antes de dar por concluida una región, repasa este protocolo estándar de exploración para asegurarte de no haber pasado por alto ninguna cámara secreta ni objetos flotantes:
+
+- [ ] Inspecciona los pozos verticales en busca de paredes destructibles o techos falsos.
+- [ ] Revisa cada abismo para ver si un planeo prolongado en el aire revela un túnel inferior alternativo.
+- [ ] Vuelve a visitar las puertas con acertijos iniciales donde las plataformas parecían antes demasiado distantes entre sí.
+- [ ] Utiliza los saltos en el ápice para conseguir una mejor perspectiva aérea sobre copas de árboles y estructuras altas.
+- [ ] Compara el recuento de coleccionables de tu zona con los totales generales del mapa.
+
+La exploración sistemática combinada con mecánicas aéreas depuradas garantiza que completar el juego al 100% sea una victoria fluida y gratificante, en lugar de una prueba interminable de ensayo y error.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Por qué es fundamental el doble salto de Can You Find Everything para los completistas?
+Esta mejora actúa como una clave fundamental de progresión en juegos de exploración. Sin la altura adicional y el tiempo en el aire que proporciona el segundo salto, resulta físicamente imposible alcanzar numerosos salientes, recovecos secretos y objetos flotantes. Dominar esta mecánica te permite superar barreras en acertijos, acceder a puntos panorámicos ocultos y completar el registro de coleccionables de cada zona.
+
+### ¿Es posible eludir bloqueos de progresión usando el doble salto de Can You Find Everything antes de tiempo?
+En muchos casos, sí. Al coordinar un salto en el ápice con técnicas de inercia como el mantenimiento de esprint o las cancelaciones de desplazamiento (dash), los jugadores habilidosos pueden acceder a salientes pensados para fases posteriores con mejoras avanzadas. Quienes practican speedrun recurren frecuentemente a estos aumentos de trayectoria para romper la secuencia (sequence breaking) de las barreras y conseguir objetos de fases avanzadas antes de lo previsto.
+
+### ¿Cómo soluciono los problemas cuando el segundo salto no responde?
+Los saltos que no responden suelen deberse a la latencia de entrada o a haber sobrepasado la ventana de activación permitida. Si tu personaje cae demasiado de un saliente sin haber saltado primero, el motor interpreta el paso en el vacío como un salto, consumiendo tu doble salto como un salto de recuperación de emergencia. Asegúrate de saltar *antes* de abandonar la plataforma y evita pulsar dos veces más rápido de lo que la tasa de refresco de tu pantalla puede procesar.

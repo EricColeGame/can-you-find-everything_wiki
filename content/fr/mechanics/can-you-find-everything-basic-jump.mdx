@@ -1,0 +1,114 @@
+export const metadata = {
+  title: "Guide Can You Find Everything Basic Jump : Limites, secrets et mécaniques",
+  description: "Vous vous demandez si vous pouvez atteindre 100 % de complétion avec les déplacements de départ ? Découvrez les limites, routes secrètes et mécaniques dans notre guide complet.",
+  category: "mechanics",
+  date: "2026-10-05",
+}
+
+Tout amateur d'exploration connaît cette frustration soudaine en apercevant un collectible alléchant flottant juste hors de portée sur une corniche éloignée. En se lançant dans une vaste chasse aux trésors, les joueurs se demandent immédiatement : **peut-on tout trouver avec le saut de base** et les déplacements initiaux, ou certains objets clés sont-ils définitivement bloqués derrière des améliorations de mobilité ? Savoir si l'on **peut tout trouver avec le saut de base** et ses mécaniques est essentiel avant de passer des heures à fouiller chaque recoin de la carte. 
+
+Bien que les déplacements fondamentaux permettent de récupérer une grande partie des premiers secrets, la collecte intégrale des objets repose largement sur la compréhension des boîtes de collision (bounding boxes), des collisions avec l'environnement et de la conservation de l'élan. Cette analyse détaillée des mécaniques examine la portée verticale, les astuces avancées d'inertie et la physique environnementale pour révéler les limites absolues du saut de départ.
+
+## Comprendre la mobilité initiale : hauteur de franchissement et seuils
+
+À la base, un saut initial fournit une impulsion verticale statique combinée à un arc prévisible déterminé par les paramètres de gravité et la vitesse horizontale. Dans la physique de déplacement standard, évaluer si l'on **peut tout trouver avec le saut de base** et les itinéraires qu'il autorise nécessite de calculer les unités verticales et le temps de suspension latéral. Les développeurs conçoivent fréquemment les zones de départ avec des paliers de corniches standardisés, ce qui signifie que certains jetons flottants et coffres sont mathématiquement ajustés à la hauteur de votre saut de base.
+
+Lorsqu'un personnage quitte le sol, la vitesse terminale et l'accélération ascendante déterminent le point culminant (apex). Si un collectible se trouve ne serait-ce qu'à une fraction d'unité au-dessus de ce sommet, un saut vertical direct échouera. Cependant, la dérive horizontale et l'élan directionnel introduisent une variation significative, déterminant si un joueur atterrit nettement ou glisse le long d'une pente.
+
+| Archétype de saut | Dégagement vertical | Portée horizontale | Temps de suspension | Collectibles estimables atteignables |
+| :--- | :--- | :--- | :--- | :--- |
+| **Saut stationnaire standard** | 1,00x unité de base | 0,80x unité de base | 0,65 s | ~35 % des secrets de la carte |
+| **Saut en pleine course** | 1,05x unité de base | 2,20x unité de base | 0,72 s | ~65 % des secrets de la carte |
+| **Saut en bordure (Coyote Time)** | 1,05x unité de base | 2,65x unité de base | 0,80 s | ~78 % des secrets de la carte |
+| **Saut assisté par une pente** | 1,45x unité de base | 2,10x unité de base | 0,95 s | ~84 % des secrets de la carte |
+| **Double saut amélioré** | 2,10x unité de base | 3,50x unité de base | 1,30 s | 100 % des secrets de la carte |
+
+Comme le montre cette décomposition des franchissements, se fier uniquement à un saut stationnaire réduit drastiquement votre potentiel de découverte. Passer d'un saut neutre à une impulsion avec pleine inertie double immédiatement votre rayon d'exploration horizontal.
+
+## Exploits de physique : repousser le saut de base au-delà de ses limites
+
+Les complétionnistes acharnés acceptent rarement les murs invisibles ou les limites de hauteur pour argent comptant. Lorsqu'il s'agit de tester si l'on **peut tout trouver avec le saut de base** et ce que permet la physique dans les premiers niveaux, la maîtrise des particularités du moteur de jeu devient indispensable. Même sans double saut, course murale ou grappin, les joueurs peuvent considérablement élargir leur champ de mouvement grâce à la manipulation de la physique fondamentale.
+
+L'une des techniques cruciales consiste à exploiter le « coyote time », cette brève fenêtre de quelques images (frames) durant laquelle le moteur du jeu accepte encore la commande de saut après que la capsule de collision de votre personnage a quitté le sol ferme. Déclencher votre saut à la toute fin de cette marge permet de franchir de larges ravins qui semblaient initialement infranchissables.
+
+| Nom de la technique | Fenêtre d'activation | Gain vertical | Gain horizontal | Niveau de difficulté |
+| :--- | :--- | :--- | :--- | :--- |
+| **Saut Coyote** | 3 à 6 frames après le bord | +0,05x | +0,45x | Modéré |
+| **Tronquage de rebord (Ledge Truncation)** | 1 à 2 frames sur la crête | +0,20x | +0,10x | Difficile |
+| **Saut glissé après sprint** | Liaison directe d'élan | -0,10x | +0,85x | Facile |
+| **Impulsion d'angle (Corner Nudge)** | Au sommet de la géométrie | +0,35x | +0,15x | Expert |
+| **Élévation par dégât (Damage Boost)** | Frame exacte de l'impact | +0,60x | +0,30x | Difficile |
+
+Associer l'inertie du sprint à la temporisation en bordure de plateforme débloque des zones conçues par les développeurs pour exiger des améliorations ultérieures. Même si ces techniques requièrent un timing précis, l'expérience des joueurs prouve que maîtriser les vecteurs d'élan donne accès à des dizaines d'objets inaccessibles sans devoir attendre l'équipement de fin de partie.
+
+## Accessibilité des collectibles selon la zone et l'emplacement
+
+Dans tout jeu axé sur le 100 %, les objets appartiennent à des catégories environnementales distinctes. Déterminer si l'on **peut tout trouver avec le saut de base** à travers des terrains complexes exige d'identifier les collectibles qui sont « soft-locked » (verrouillés de manière souple) de ceux qui sont « hard-locked » (strictement inaccessibles).
+
+Les objets soft-locked semblent inaccessibles, mais un itinéraire astucieux, l'empilement d'éléments du décor ou un saut depuis un point élevé permettent de les atteindre. À l'inverse, les objets hard-locked se trouvent dans des zones isolées — piliers sans appui ou plafonds dépourvus de géométrie environnante — où une mécanique de propulsion secondaire est mathématiquement obligatoire.
+
+```
+Flux d'itinéraire d'exploration :
+[Repérer un collectible] 
+       │
+       ├── Point élevé à proximité ? ──(Oui)──> Descente planée / Saut de sprint
+       │
+       └── Pilier isolé ? 
+              ├── Empilement d'objets possible ? ──(Oui)──> Grimper & Sauter
+              └── Géométrie lisse uniquement ? ───(Non)───> Barrière de mobilité stricte (Revenir plus tard)
+```
+
+| Structure de la zone | Collectible visé | Faisabilité de l'approche | Technique requise / Prérequis |
+| :--- | :--- | :--- | :--- |
+| **Plaines de départ** | Pièces et reliques de terrain | Réalisable à 100 % | Saut classique en course |
+| **Ruines croulantes** | Éclats flottants | Réalisable à 85 % | Timing Coyote & escalade d'objets |
+| **Cavernes verticales** | Coffres sur corniches hautes | Réalisable à 40 % | Accroche au rebord / Rebond mural |
+| **Îles célestes** | Jetons nuageux | Réalisable à 15 % | Barrière de mobilité stricte (Planeur / Double saut) |
+| **Grotte submergée** | Orbes sur stalactites | Réalisable à 50 % | Préservation d'élan via les rampes |
+
+Avant de consacrer des heures à tenter une manœuvre d'une précision chirurgicale, observez attentivement le terrain environnant. Si un objet surplombe un mur totalement nu sans aucun accessoire interactif ni angle d'approche surélevé, cela indique clairement qu'il faudra revenir sur vos pas une fois de meilleurs outils débloqués.
+
+## Géométrie environnementale : utiliser le monde comme tremplin
+
+Lorsque la simple hauteur de saut ne suffit pas, les joueurs avisés transforment l'environnement en une extension de leur panoplie de mouvements. Des maillages de terrain irréguliers, des rochers inclinés et des objets physiques interactifs permettent de combler l'écart entre la mobilité de base et les cibles difficiles d'accès.
+
+De nombreux jeux modernes intègrent des objets soumis à une physique dynamique, comme des caisses, des tonneaux ou des débris déplaçables. Coincer deux objets physiques contre une paroi abrupte crée un escalier improvisé, augmentant concrètement la hauteur initiale de votre saut de plus de 150 %.
+
+| Type de surface / objet | Mécanique d'interaction | Gain d'élévation | Utilisation principale en exploration |
+| :--- | :--- | :--- | :--- |
+| **Caisses en bois mobiles** | Pousser et empiler | Hauteur de +1,0x à +2,0x | Accès aux falaises escarpées |
+| **Parois rocheuses inclinées** | Glissade sur pente raide | Réinitialisation de hauteur +0,5x | Contournement des falaises basses |
+| **Poteaux et rambardes** | Prise d'appui de précision | Élévation de base +0,3x | Obtention d'un meilleur apex |
+| **Boutons-poussoirs interactifs** | Plateforme temporaire | Variable selon l'énigme | Rebonds synchronisés sur corniches |
+| **Débris destructibles** | Rebond par collision en l'air | Impulsion immédiate +0,4x | Franchissement de gouffres dangereux |
+
+Les retours de la communauté soulignent constamment la façon dont les accessoires physiques court-circuitent les barrières de progression prévues par les créateurs. Si un élément de décor peut être transporté ou projeté contre un obstacle, vous pouvez contourner les restrictions de hauteur sans attendre d'obtenir des améliorations de mobilité.
+
+## Stratégies de routage communautaire et de sequence-breaking
+
+Dans l'univers du speedrun et des défis de complétion, déterminer si l'on **peut tout trouver avec le saut de base** et jusqu'où ses limites s'étendent est devenu une discipline à part entière. Les créateurs d'itinéraires cartographient méthodiquement des parcours « 100 % mobilité minimale » qui réduisent au maximum les allers-retours.
+
+Plutôt que d'aborder les collectibles de bas en haut, les vétérans cherchent le point culminant d'une zone ouverte. Une fois au sommet, vous pouvez échanger de la hauteur verticale contre de la distance horizontale, en descendant sur des plateformes qui nécessiteraient autrement un saut amélioré ou un grappin. Vous pouvez consulter de vastes bases de données d'itinéraires et des analyses de speedrun sur des espaces actifs comme les [hubs communautaires de Steam](https://steamcommunity.com) pour voir comment d'autres collectionneurs conçoivent des parcours à 100 % sans aucune amélioration.
+
+Lorsque la communauté analyse si l'on **peut tout trouver avec le saut de base** sans jamais rebrousser chemin, le consensus général se situe autour de 70 % à 80 % de la totalité des objets dans les structures d'aventure classiques. Les objets restants se trouvent derrière des barrières scénarisées, des fossés nécessitant un dash aérien ou des puits verticaux aux surfaces conçues sans aucune friction.
+
+## Conseils pratiques pour maximiser l'exploration avec le saut de base
+
+Pour pousser votre pourcentage de complétion à son maximum mathématique en n'utilisant que les compétences initiales, adoptez ces réflexes fondamentaux de déplacement :
+
+- **Initiez toujours vos sauts en plein sprint :** Les sauts stationnaires perdent plus de 60 % de leur portée horizontale potentielle. Conservez votre élan maximal avant de franchir le moindre bord.
+- **Longez les arêtes murales :** Les coins de murs concaves dissimulent souvent des plans de collision horizontaux microscopiques. Sauter de manière répétée en poussant vers l'angle permet souvent d'« accrocher » des jointures de terrain invisibles.
+- **Repérez les points de largage en altitude :** Si un collectible est perché sur un monolithe isolé, scrutez l'horizon à la recherche de crêtes rocheuses adjacentes. Planer, tomber ou plonger en sprint vers le bas s'avère systématiquement plus facile que de tenter une ascension directe.
+- **Manipulez les objets physiques sans attendre :** Avant de quitter une zone les mains vides, cherchez des tonneaux, des chariots ou des meubles déplaçables pouvant être empilés sous les rebords élevés.
+- **Notez les objets inaccessibles :** Évitez de perdre du temps sur des points strictement verrouillés. Marquez les objets inatteignables sur votre carte avec des repères personnalisés afin de les récupérer rapidement dès que vous aurez débloqué les améliorations ultérieures.
+
+## Foire aux questions
+
+### Peut-on tout trouver uniquement avec les mécaniques du saut de base lors d'une première partie ?
+Non, il est impossible de trouver 100 % des collectibles avec uniquement les mécaniques du saut de base. Bien que les joueurs expérimentés parviennent à récupérer 70 % à 80 % des objets grâce à des astuces d'inertie et à l'exploitation de la géométrie, les développeurs placent délibérément certains éléments derrière des barrières de mobilité strictes, telles que le double saut, le grappin ou le planeur.
+
+### Quelle est l'astuce la plus efficace pour augmenter la distance du saut de base ?
+La méthode la plus fiable consiste à maîtriser le « coyote time » combiné à un saut préparé en plein sprint. En attendant 2 à 4 frames après avoir quitté le bord d'une falaise avant d'appuyer sur la touche de saut, vous gagnez une allonge horizontale considérable permettant de franchir de larges gouffres.
+
+### Comment savoir si un objet est totalement impossible à atteindre avec les déplacements initiaux ?
+Un objet est généralement impossible d'accès s'il flotte dans un espace vide sans mur à proximité, sans perchoir surélevé ni objet déplaçable, et qu'il se situe à plus de 1,5 fois la hauteur de votre saut de base. Si aucune surface de collision ne permet d'escalader ou de se laisser tomber, l'objet est strictement verrouillé et nécessite de futures améliorations de déplacement.
