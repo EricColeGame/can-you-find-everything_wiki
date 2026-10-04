@@ -19,18 +19,17 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "My Seafood Stand Wiki",
-  shortName: "My Seafood Stand",
-  logoText: "SS",
-  tagline: "Complete Guides, Codes, Recipes & Tier Lists",
-  description: "Your ultimate guide to My Seafood Stand on Roblox! Explore active working codes, seafood recipes, best upgrades, profit strategies, and progression guides.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top").hostname.replace(/^www\./, "")}`,
-  gameUrl: "https://www.roblox.com/games/my-seafood-stand",
-  heroVideoId: "M8DvcwoFRrk", // Roblox My Seafood Stand codes & gameplay video
+  name: "Can You Find Everything Wiki",
+  shortName: "Can You Find Everything",
+  logoText: "C",
+  tagline: "Hidden Object Locations, Area Guides & Walkthroughs",
+  description: "Your ultimate guide to Can You Find Everything on Roblox! Explore hidden object locations, area walkthroughs, secrets, tips and completion guides.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://can-you-find-everything.wiki",
+  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://can-you-find-everything.wiki").hostname.replace(/^www\./, "")}`,
+  gameUrl: "https://www.roblox.com/games/5600975759/Can-You-Find-Everything",
+  heroVideoId: "MNqAKOGlN6E", // Can You Find Everything Roblox hard items location guide
   social: {
-    discord: "https://discord.gg/roblox",
-    youtube: "https://www.youtube.com/@roblox",
+    youtube: "https://www.youtube.com/watch?v=MNqAKOGlN6E",
   },
   locales: ["en", "es", "pt", "de", "fr"],
   defaultLocale: "en",
