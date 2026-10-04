@@ -12,7 +12,7 @@ import { routing } from "@/i18n/routing";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://can-you-find-everything.wiki";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -35,8 +35,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ],
       apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
     },
-    openGraph: { type: "website", locale, url: siteUrl, siteName: siteConfig.name, images: [{ url: image }] },
-    twitter: { card: "summary_large_image", images: [image] },
+    openGraph: {
+      type: "website",
+      locale,
+      url: siteUrl,
+      siteName: siteConfig.name,
+      title: "Can You Find Everything Wiki",
+      description: "Fan-made Can You Find Everything wiki with hidden object locations, area guides, walkthroughs, secrets and completion tips.",
+      images: [{ url: image, width: 1280, height: 720, alt: "Can You Find Everything Wiki" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Can You Find Everything Wiki",
+      description: "Fan-made Can You Find Everything wiki with hidden object locations, area guides, walkthroughs, secrets and completion tips.",
+      images: [image],
+    },
     ...(adsenseId ? { other: { "google-adsense-account": adsenseId } } : {}),
   };
 }

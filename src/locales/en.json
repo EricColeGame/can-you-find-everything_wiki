@@ -1,9 +1,9 @@
 {
   "site": {
-    "name": "My Seafood Stand Wiki",
-    "shortName": "My Seafood Stand",
-    "tagline": "Complete Guides, Codes, Recipes & Tier Lists",
-    "description": "Your ultimate guide to My Seafood Stand on Roblox! Explore active codes, seafood recipes, best upgrades, profit strategies, and progression guides.",
+    "name": "Can You Find Everything Wiki",
+    "shortName": "Can You Find Everything",
+    "tagline": "Hidden Object Locations, Area Guides & Walkthroughs",
+    "description": "Your ultimate guide to Can You Find Everything on Roblox! Explore hidden object locations, area walkthroughs, secrets, tips and completion guides.",
     "legalNotice": "Non-official fan wiki. Made by players, for players."
   },
   "nav": {
@@ -26,23 +26,23 @@
   },
   "home": {
     "meta": {
-      "title": "My Seafood Stand Wiki — Codes, Recipes, Upgrades & Guides",
-      "description": "Complete My Seafood Stand guide on Roblox with active working codes, all fish & recipes, best upgrades tier list, and fast cash tips."
+      "title": "Can You Find Everything Wiki - Guides & Walkthrough",
+      "description": "Explore Can You Find Everything guides, hidden objects, puzzles, walkthroughs, tips and solutions to help you discover every item and complete each challenge."
     },
     "hero": {
-      "eyebrow": "Fan-Made Community Wiki",
-      "title": "My Seafood Stand",
-      "description": "Master your restaurant in My Seafood Stand on Roblox. Access all active codes, complete fish & recipe catalog, optimal upgrades, and pro money-making strategies.",
+      "eyebrow": "Hidden Object Puzzle Game",
+      "title": "Can You Find Everything Wiki",
+      "description": "A hidden-object puzzle game where players search detailed scenes and discover cleverly concealed items. Track every location, secret and walkthrough in our fan-made wiki.",
       "stats": [
-        "All Codes",
-        "All Fish & Recipes",
-        "Upgrade Guides",
-        "Fast Cash Tips"
+        "Hidden Object Locations",
+        "Area Walkthroughs",
+        "Secrets & Tips",
+        "Completion Guides"
       ],
       "primaryCta": "Beginner Guide",
-      "secondaryCta": "Seafood Tier List",
-      "tertiaryCta": "Active Codes",
-      "videoLabel": "Official media"
+      "secondaryCta": "Area Walkthroughs",
+      "tertiaryCta": "Hidden Object Locations",
+      "videoLabel": "Gameplay Walkthrough"
     },
     "updates": {
       "title": "Latest Updates",
@@ -342,8 +342,8 @@
       ]
     },
     "finalCta": {
-      "title": "Ready to Master My Seafood Stand?",
-      "description": "From your first steps in Fort Adams to endgame boss fights our community wiki has you covered with free, up-to-date guides.",
+      "title": "Ready to Find Everything?",
+      "description": "From your first hidden object hunt to full-area completion, our community wiki has you covered with free, up-to-date guides.",
       "primary": "Read the Beginner Guide",
       "secondary": "Play on Roblox"
     }
@@ -379,17 +379,17 @@
     "noGuidesAvailable": "No guides available yet. Check back soon!"
   },
   "footer": {
-    "aboutTitle": "My Seafood Stand Wiki",
-    "about": "My Seafood Stand Wiki is an independent fan-built guide hub covering progression routes, races, bosses, builds, and essential game knowledge for new and veteran players alike.",
+    "aboutTitle": "Can You Find Everything Wiki",
+    "about": "Can You Find Everything Wiki is an independent fan-built guide hub covering hidden object locations, area walkthroughs, secrets and completion tips for new and veteran players alike.",
     "quickLinks": "Quick Links",
     "guides": "Guides",
     "legal": "Legal",
-    "copyright": "2026 My Seafood Stand Wiki. Not affiliated with Midnight Continent or Roblox.",
-    "description": "Free Bleach-inspired fighting RPG on Roblox. 3 races, 130+ skills, Lv100 cap.",
-    "playGame": "Play My Seafood Stand",
-    "officialDiscord": "Official Discord",
-    "officialYoutube": "Official YouTube",
-    "vvBuilder": "VV Builder (Skill Planner)",
+    "copyright": "2026 Can You Find Everything Wiki. Not affiliated with windflowersnow or Roblox.",
+    "description": "Free hidden-object scavenger hunt on Roblox. Explore a huge open world and find cleverly hidden items.",
+    "playGame": "Play Can You Find Everything on Roblox",
+    "officialDiscord": "Official Roblox Group",
+    "officialYoutube": "Gameplay Walkthroughs",
+    "vvBuilder": "Community Forum",
     "beginnerGuide": "Beginner Guide",
     "raceGuides": "Race Guides",
     "bossGuides": "Boss Guides",
